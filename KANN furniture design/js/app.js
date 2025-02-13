@@ -1,0 +1,1 @@
+document.querySelector('#cart-count').textContent = '0';
