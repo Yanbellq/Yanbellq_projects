@@ -74,6 +74,11 @@ li {
     opacity: 40%;
 }
 
+#count-reset {
+    color: #333;
+    cursor: pointer;
+}
+
 /* Global info */
 .global-info__text {
     display: flex;
@@ -114,6 +119,25 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem 1rem 0rem;
+    padding: 0rem 2rem 0rem 0rem;
     color: #333;
+    /* border: 2px solid red; */
+}
+
+.sofa-first {
+    margin-left: 1rem;
+}
+
+.sofa-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sofa-text__title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
 }
