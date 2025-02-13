@@ -42,6 +42,10 @@ li {
     z-index: 1000;
 }
 
+.blur {
+    backdrop-filter: blur(10px);
+}
+
 .header div {
     display: flex;
     align-items: center;

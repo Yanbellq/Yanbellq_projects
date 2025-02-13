@@ -32,8 +32,6 @@ addToCartButtons.forEach(button => {
   });
 });
 
-
-
 const countReset = document.getElementById('count-reset');
 
 if (countReset) {
@@ -44,9 +42,16 @@ if (countReset) {
   })
 }
 
-
-
 function updateCartCount() {
   cartCountElement.textContent = cartCount;
 }
 
+
+window.addEventListener('scroll', function () {
+  const header = document.getElementById('header');
+  if (window.scrollY > 50) {
+    header.classList.add('blur');
+  } else {
+    header.classList.remove('blur');
+  }
+});
