@@ -235,8 +235,34 @@ li {
     display: flex;
 }
 
+.footer-info__item {
+    width: 300px;
+    margin-bottom: 1rem;
+}
 
+.footer-info__title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
 
+.footer-info__item ul {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #00000041;
+}
+
+.footer-info__item ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-info__item ul li a:hover {
+    opacity: 40%;
+}
 
 .privacy {
     display: flex;
@@ -268,4 +294,38 @@ li {
 
 .privacy-link:hover {
     color: #00000070;
+}
+
+.search-block {
+    margin-left: 15rem;
+    position: relative;
+}
+
+.search {
+    height: 35px;
+    width: 200px;
+    border: 3px solid #333;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border: 3px solid #333;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #fff;
+    color: #333;
 }

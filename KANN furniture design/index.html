@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./img/Group.svg" type="image/x-icon" class="favicon">
     <link rel="stylesheet" href="./css/style.css">
     <title>KANN Furniture</title>
@@ -17,7 +18,7 @@
                     <ul class="nav nav-link">
                         <li><a href="#shop" class="nav-item">Магазин</a></li>
                         <li><a href="#product" class="nav-item">Наши продукты</a></li>
-                        <li><a href="#" class="nav-item">Новости</a></li>
+                        <li><a href="#news" class="nav-item">Новости</a></li>
                         <li><a href="#" class="nav-item">Предложения</a></li>
                     </ul>
                 </div>
@@ -115,15 +116,15 @@
     <footer class="footer">
         <div class="footer-text">
             <div>
-                <h3 class="footer-text__title">Подпишитесь на нашу рассылку <br>чтобы получать наши предложения и следить за нашими новостями.</h3>
+                <h3 class="footer-text__title" id="news">Подпишитесь на нашу рассылку <br>чтобы получать наши предложения и следить за нашими новостями.</h3>
             </div>
             <div class="footer-text__item">
                 <button class="footer-text__btn">Подписаться</button>
             </div>
         </div>
         <div class="footer-info">
-            <div>
-                <p>KANN Design</p>
+            <div class="footer-info__item">
+                <p class="footer-info__title">KANN Design</p>
 
                 <ul>
                     <li><a href="#">Предложения</a></li>
@@ -133,18 +134,18 @@
                     <li><a href="#">Точки продаж</a></li>
                 </ul>
             </div>
-            <div>
-                <p>Нужна помощь?</p>
+            <div class="footer-info__item">
+                <p class="footer-info__title">Нужна помощь?</p>
 
                 <ul>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Счет</a></li>
                     <li><a href="#">Возвраты</a></li>
-                    <li><a href="#">общие положения и условия</a></li>
+                    <li><a href="#">Oбщие положения и условия</a></li>
                 </ul>
             </div>
-            <div>
-                <p>Профессионалам</p>
+            <div class="footer-info__item">
+                <p class="footer-info__title">Профессионалам</p>
 
                 <ul>
                     <li><a href="#">Каталог</a></li>
@@ -153,16 +154,17 @@
                     <li><a href="#">3Д модели</a></li>
                 </ul>
             </div>
-            <div>
-                <p>Подписывайтесь на нас</p>
+            <div class="footer-info__item">
+                <p class="footer-info__title">Подписывайтесь на нас</p>
 
                 <ul>
                     <li><a href="#">Instagram</a></li>
                     <li><a href="#">Facebook</a></li>
                 </ul>
             </div>
-            <div>
-                <input type="text" placeholder="Поиск" id="search">
+            <div class="search-block">
+                <input type="text" placeholder="Поиск" id="search" class="search">
+                <button class="search-btn" type="submit"><i class="lni lni-search-2"></i></button>
             </div>
         </div>
 

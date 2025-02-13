@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./img/Group.svg" type="image/x-icon" class="favicon">
     <link rel="stylesheet" href="./css/style.css">
     <title>KANN Furniture</title>
@@ -15,9 +16,9 @@
                     <a href="/" class="logo"><img src="./img/Group.svg" alt="Group"></a>
                     
                     <ul class="nav nav-link">
-                        <li><a href="#" class="nav-item">Shop</a></li>
+                        <li><a href="#shop" class="nav-item">Shop</a></li>
                         <li><a href="#product" class="nav-item">Products</a></li>
-                        <li><a href="#" class="nav-item">News</a></li>
+                        <li><a href="#news" class="nav-item">News</a></li>
                         <li><a href="#" class="nav-item">Proposition</a></li>
                     </ul>
                 </div>
@@ -27,7 +28,7 @@
                         <li><a href="#" class="nav-item active">EN</a></li>
                     </ul>
                     <ul class="nav nav-menu">
-                        <li><a href="#" class="nav-item">Search</a></li>
+                        <li><a href="#search" class="nav-item">Search</a></li>
                         <li><a href="#" class="nav-item">Shop points</a></li>
                         <li><span href="#" class="nav-item" id="count-reset">Cart (<span id="cart-count" class="cart-count"></span>)</span></li>
                     </ul>
@@ -90,9 +91,92 @@
                 <button class="global-info__btn add-to-cart">Buy</button>
             </div>
         </section>
+    <section class="shop" id="shop">
+            <ul class="shop-list">
+                <li><a href="#" class="shop-item">Bench</a></li>
+                <!-- <li><a href="#" class="shop-item">Скамейка</a></li> -->
+                <li><a href="#" class="shop-item">Bookcase</a></li>
+                <li><a href="#" class="shop-item">Buffet</a></li>
+                <li><a href="#" class="shop-item">Desc</a></li>
+                <li><a href="#" class="shop-item">Sofa</a></li>
+                <li><a href="#" class="shop-item">Chair</a></li>
+                <li><a href="#" class="shop-item">High chair</a></li>
+                <li><a href="#" class="shop-item">Bar cart</a></li>
+                <li><a href="#" class="shop-item">Shelf</a></li>
+                <li><a href="#" class="shop-item">Armchair</a></li>
+                <li><a href="#" class="shop-item">Lighting</a></li>
+                <li><a href="#" class="shop-item">Mirror</a></li>
+                <li><a href="#" class="shop-item">Screen</a></li>
+                <li><a href="#" class="shop-item">Valet stand</a></li>
+                <li><a href="#" class="shop-item">Coffee table</a></li>
+                <li><a href="#" class="shop-item">Diner table</a></li>
+            </ul>
+        </section>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="footer-text">
+            <div>
+                <h3 class="footer-text__title" id="news">Subscribe to our newsletter to receive our offers and follow our news.</h3>
+            </div>
+            <div class="footer-text__item">
+                <button class="footer-text__btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="footer-info__item">
+                <p class="footer-info__title">KANN Design</p>
 
+                <ul>
+                    <li><a href="#">Propositions</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Designs</a></li>
+                    <li><a href="#">Shop points</a></li>
+                </ul>
+            </div>
+            <div class="footer-info__item">
+                <p class="footer-info__title">Need help?</p>
+
+                <ul>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Check</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">General Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-info__item">
+                <p class="footer-info__title">For proffessional</p>
+
+                <ul>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Product card</a></li>
+                    <li><a href="#">3D models</a></li>
+                </ul>
+            </div>
+            <div class="footer-info__item">
+                <p class="footer-info__title">Follow us</p>
+
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="search-block">
+                <input type="text" placeholder="Search" id="search" class="search">
+                <button class="search-btn" type="submit"><i class="lni lni-search-2"></i></button>
+            </div>
+        </div>
+
+        <div class="privacy">
+            <div class="privacy-copy">
+                <p>&copy HruIND. KANN Design 2025</p>
+                <p>All rights reserved</p>
+            </div>
+            <div>
+                <a href="#" class="privacy-link">Cookies Terms of Use.</a>
+            </div>
+        </div>
     </footer>
 
     <script src="./js/app.js"></script>
