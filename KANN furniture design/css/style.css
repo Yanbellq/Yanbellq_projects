@@ -39,6 +39,7 @@ li {
     height: 60px;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .header div {
@@ -121,10 +122,11 @@ li {
     align-items: center;
     padding: 0rem 2rem 0rem 0rem;
     color: #333;
+    position: relative;
     /* border: 2px solid red; */
 }
 
-.sofa-first {
+.ml1 {
     margin-left: 1rem;
 }
 
@@ -140,4 +142,16 @@ li {
     line-height: 40px;
     letter-spacing: 1px;
     margin-bottom: 1rem;
+}
+
+.bench-info__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 1240px;
+    height: 500px;
 }
