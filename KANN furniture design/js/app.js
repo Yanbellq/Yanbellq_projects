@@ -50,8 +50,8 @@ function updateCartCount() {
 window.addEventListener('scroll', function () {
   const header = document.getElementById('header');
   if (window.scrollY > 50) {
-    header.classList.add('blur');
+    header.classList.add('blur', 'line');
   } else {
-    header.classList.remove('blur');
+    header.classList.remove('blur', 'line');
   }
 });
