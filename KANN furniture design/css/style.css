@@ -63,6 +63,11 @@ li {
     align-items: center;
 }
 
+.nav span {
+    color: #333;
+    cursor: pointer;
+}
+
 .nav li, .logo {
     margin-right: 1.5rem;
 }
