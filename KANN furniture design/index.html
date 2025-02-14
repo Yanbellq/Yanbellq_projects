@@ -9,15 +9,42 @@
     <title>KANN Furniture</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="./img/Group.svg" alt="Group"></a>
+            <input id="burger-check" type="checkbox" />
+            <label class="burger-button" for="burger-check">
+                <span></span>
+            </label>
+
+            <div class="header-buttons-container">
+                <div class="header-buttons">
+                    <ul class="nav-link-mini">
+                        <li><a href="#shop" class="nav-item">Магазин</a></li>
+                        <li><a href="#product" class="nav-item">Наши продукты</a></li>
+                        <li><a href="#news" class="nav-item">Новости</a></li>
+                        <li><a href="#" class="nav-item">Предложения</a></li>
+                    </ul>
+                    <ul class="nav-menu-mini">
+                        <li><a href="#search" class="nav-item">Поиск</a></li>
+                        <li><a href="#" class="nav-item">Точки продаж</a></li>
+                        <li><span href="#" class="nav-item" id="count-reset">Корзина (<span id="cart-count" class="cart-count"></span>)</span></li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <ul class="nav-lang-mini">
+                        <li><a href="#" class="nav-item active">RU</a></li>
+                        <li><a href="./main_EN.html" class="nav-item">EN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="overlay"></div>
     <main class="wrapper">
         <section class="global-info">
             <nav class="header" id="header">
-                <input id="burger-check" type="checkbox" />
-                <label class="burger-button" for="burger-check">
-                    <span></span>
-                </label>
-
-                <div>
+                <div class="header__block">
                     <a href="#" class="logo"><img src="./img/Group.svg" alt="Group"></a>
                     
                     <ul class="nav nav-link">
@@ -27,7 +54,7 @@
                         <li><a href="#" class="nav-item">Предложения</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="header__block"> 
                     <ul class="nav-lang">
                         <li><a href="#" class="nav-item active">RU</a></li>
                         <li><a href="./main_EN.html" class="nav-item">EN</a></li>
@@ -43,7 +70,6 @@
                 <h1 class="global-info__title">Коллекция Galta от SCMP <br> Design Office</h1>
                 <a href="#buy" class="global-info__btn">Купить</a>
             </div>
-
         </section>
         <section class="product" id="product">
             <div class="global-info__text ">
@@ -178,7 +204,7 @@
                 <p>&copy HruIND. KANN Design 2025</p>
                 <p>Все права защищены</p>
             </div>
-            <div>
+            <div class="privacy-link__block">
                 <a href="#" class="privacy-link">Условия иcпользования cookies.</a>
             </div>
         </div>
