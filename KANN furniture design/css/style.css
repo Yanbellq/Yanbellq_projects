@@ -329,3 +329,140 @@ li {
     background-color: #fff;
     color: #333;
 }
+
+.burger-button {
+    display: none;
+    position: relative;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.burger-button::before,
+.burger-button::after,
+#burger-check::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-button::before {
+    top: 0;
+}
+
+#burger-check::before {
+    top: 1px;
+}
+
+.burger-button::after {
+    bottom: 0;
+}
+
+#burger-check {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+
+    .wrapper section {
+        margin-bottom: 50px;
+    }
+
+    .header {
+        background-color: #fff;
+        border-bottom: 1px solid #333;
+        width: 100%;
+    }
+
+    .header div {
+        display: none;
+    }
+
+    .burger-button {
+        display: block;
+    }
+
+    #burger-check:checked+.burger-button+.header-buttons-container {
+        display: flex;
+    }
+
+    .burger-button {
+        display: block;
+    }
+
+    #burger-check:checked+.burger-button::before {
+        transform: rotate(45deg) translate(5px, 6px);
+        background-color: rgba(255, 0, 0, 1);
+    }
+
+    #burger-check:checked+.burger-button::after {
+        transform: rotate(-45deg) translate(12px, -12px);
+        background-color: rgba(255, 0, 0, 1);
+    }
+
+    #burger-check:checked+.burger-button span {
+        display: none;
+    }
+
+    #burger-check:checked::before {
+        opacity: 0;
+    }
+
+    .burger-button > span {
+        display: block;
+        position: absolute;
+        top: 45%;
+        width: 100%;
+        height: 4px;
+        background-color: rgba(0, 0, 0, 0.37);
+        border-radius: 2px;
+    }
+
+    .global-info {
+        width: 100%;
+        height: auto;
+        background-position: center;
+        padding: 0;
+    }
+
+    .global-info__text {
+        margin-left: 0.5rem;
+        /* border: 2px solid red; */
+        width: 260px;
+        height: 700px;
+    }
+
+    .global-info__title {
+        font-size: 30px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        width: 260px;
+    }
+
+    #product .global-info__text {
+        /* border: 2px solid red; */
+        height: 200px;
+        width: 160px;
+    }
+
+    .rectangle {
+        width: 200px;
+    }
+
+    .product-title {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+
+
+}
