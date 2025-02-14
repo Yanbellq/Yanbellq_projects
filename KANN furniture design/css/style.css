@@ -350,7 +350,7 @@ li {
 .burger-button {
     display: none;
     position: relative;
-    width: 35px;
+    width: 30px;
     height: 30px;
     cursor: pointer;
     margin-right: 10px;
@@ -362,7 +362,7 @@ li {
     content: '';
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 37px;
     height: 4px;
     background-color: rgba(0, 0, 0, 0.37);
     border-radius: 2px;
@@ -422,6 +422,7 @@ header {
         border-top: 1px solid #333;
         border-bottom: 1px solid #333;
         height: 140px;
+        animation: burgerAnimation 0.5s ease;
     }
 
     .header-buttons {
@@ -464,10 +465,6 @@ header {
     .header {
         display: none;
     }
-
-    #burger-check:checked+.burger-button+.header div {
-        display: flex;
-    }
     
     #burger-check:checked+.burger-button+.header-buttons-container {
         display: flex;
@@ -488,7 +485,7 @@ header {
     }
 
     #burger-check:checked + .burger-button + .overlay {
-        display: block;
+        display: flex;
     }
 
     #burger-check:checked::before {
@@ -521,7 +518,7 @@ header {
 
     .global-info__title {
         font-size: 30px;
-        line-height: 25px;
+        line-height: 27px;
         letter-spacing: 1px;
         width: 260px;
     }
@@ -760,4 +757,22 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+@keyframes burgerAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes burgerAnimationReverse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
