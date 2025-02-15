@@ -1,0 +1,122 @@
+* {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #1F1F1F;
+    /* border: 2px solid red; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1F1F1F;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* padding: 0 50px; */
+    background-color: #F9F9F9;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    height: 60px;
+    /* width: 100%; */
+    /* position: fixed;
+    top: 0; */
+}
+
+.logo__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-left: 50px;
+    transition: all 0.2s;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo {
+    font-size: 36px;
+    font-weight: 200;
+    margin-left: 15px;
+
+}
+
+.logo__container:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.nav__item {
+    /* margin-left: 20px; */
+    font-size: 24px;
+    font-weight: 200;
+    margin-right: 40px;
+    color: #8A8A8A;
+    /* border: 2px solid red; */
+    padding: 0px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.nav__item:hover {
+    background-color: transparent;
+    color: #1F1F1F;
+    border: 1px solid #1F1F1F;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.contact {
+    margin-right: 50px;
+    border: 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    /* transition: 0.5s; */
+}
+
+.contact:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    /* transition: all 0.5s; */
+}
+
+/* 
+.image {
+    clip-path: polygon(460px 640px, 460px 545px, 1300px 545px, 1300px 0px, 840px 0px, 840px 225px, 0px 225px, 0px 640px);
+    background-color: #D9D9D9;
+    height: 640px;
+    width: 1300px;
+    } */
+    
+.image {
+    height: 640px;
+    width: 1300px;
+    /* border: 2px solid red; */
+}
