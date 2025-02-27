@@ -16,11 +16,11 @@
                     <span class="logo-blue">Web</span>Studio
                 </strong>
             </p> -->
-            <img src="./images/hruInd.svg" alt="Logo" class="logo" height="100px">
+            <a href="#" class="logo"><img src="./images/hruInd.svg" alt="Logo" class="logo-image" height="100px"></a>
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Студія</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Портфоліо</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Контакти</a></li>
+                <li class="nav-item"><a href="./source/aboutUs.html" class="nav-link">Студія</a></li>
+                <li class="nav-item"><a href="./source/portfolio.html" class="nav-link">Портфоліо</a></li>
+                <li class="nav-item"><a href="./source/contacts.html" class="nav-link">Контакти</a></li>
             </ul>
             <ul class="support">
                 <li class="support-item"><a class="nav-link" href="tel:+380976251837">Зателефонуйте нам</a></li>
@@ -59,17 +59,28 @@
         <section class="popover-wrapper">
             <button popovertarget="my-popover" class="btn">Login</button>
 
-            <div id="my-popover" popover>
-                <form id="form">
-                    <div class="text-input">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <div id="my-popover" popover class="popover">
+                <form id="form" class="form">
+                    <legend class="form-title">Login Form</legend>
+                    <div class="upper-form">
+                        <div class="text-input">
+                            <label for="name"><box-icon type='solid' name='user' class="user-ico"></box-icon><span class="text-input-title">Username</span></label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="password-input">
+                            <label for="password"><box-icon type='solid' name='lock-alt' class="password-ico"></box-icon><span class="password-input-title">Password</span></label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </div>
                     </div>
-                    <div class="password-input">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    <div class="bottom-form">
+                        <div class="no-account">
+                            <span class="no-account-text">Don't have an account?</span>
+                            <a href="#" class="signup">Signup</a>
+                        </div>
                     </div>
-                    <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
         </section>
@@ -82,5 +93,6 @@
     <script src="./js/User.js"></script>
     <script src="./js/Student.js"></script>
     <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

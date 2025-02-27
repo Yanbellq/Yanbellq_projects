@@ -13,6 +13,9 @@ document.getElementById('form').addEventListener('submit', function(event ){
 
         let log = user.vadationPassword();
         console.log(log);
+
+        // Redirect to another page
+        window.location.href = '/source/subscribe.html';
     }
 })
 
