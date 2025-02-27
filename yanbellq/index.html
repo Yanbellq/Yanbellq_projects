@@ -16,7 +16,7 @@
                     <span class="logo-blue">Web</span>Studio
                 </strong>
             </p> -->
-            <img src="./images/hruInd.svg" alt="Logo" class="logo" height="80px" width="auto">
+            <img src="./images/hruInd.svg" alt="Logo" class="logo" height="100px">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#" class="nav-link">Студія</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Портфоліо</a></li>
@@ -24,17 +24,59 @@
             </ul>
             <ul class="support">
                 <li class="support-item"><a class="nav-link" href="tel:+380976251837">Зателефонуйте нам</a></li>
-                <li class="support-item"><a class="nav-link" href="mailto:yanbellq@gmail.com">Напишіть нам</a></li>
+                <li class="support-item">
+                    <a class="nav-link" href="
+                        mailto:yanbellq@gmail.com
+                        ? 
+                        &cc=hrushko.maksym@chnu.edu.ua
+                        &bcc=maxim.hrushko@gmail.com
+                        &subject=С заглавной
+                        &body=Основное содержимое письма тоже должно быть с ЗАГЛАВНОЙ
+                        ">
+                        Напишіть нам
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
 
 
-    <main></main>
+    <main class="main">
+        <section class="wrapper">
+            <h1 class="title">Я самый красивый заголовок</h1>
+        </section>
+        <section class="list-wrapper">
+            <div class="list">
+                <div class="item">[01] item</div>
+                <div class="item">[02] item</div>
+                <div class="item">[03] item</div>
+                <div class="item">[04] item</div>
+                <div class="item">[05] item</div>
+                <div class="item">[06] item</div>
+            </div>
+        </section>
+        <section class="popover-wrapper">
+            <button popovertarget="my-popover" class="btn">Login</button>
+
+            <div id="my-popover" popover>
+                <form id="form">
+                    <div class="text-input">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="password-input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
     <footer></footer>
-
-
 
 
     <script src="./js/User.js"></script>
