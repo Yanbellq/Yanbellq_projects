@@ -1,0 +1,19 @@
+.main {
+    padding: 10rem 0 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: calc(100vh - (#{$header-height} + #{$footer-height} + 15rem));
+    min-height: calc(100dvh - (#{$header-height} + #{$footer-height} + 15rem));
+
+    // border: 2px solid red;
+
+    &--home {
+        padding-top: 0;
+    }
+
+    &:has(.sidebar) {
+        align-items: flex-start;
+    }
+}

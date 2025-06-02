@@ -1,0 +1,39 @@
+.switch {
+    padding: .5rem;
+    margin: 6rem 0 2rem;
+    width: 100%;
+    display: flex;
+
+    border-radius: 1.5rem;
+    background: $light-gray;
+
+    position: relative;
+}
+
+.switch__btn {    
+    padding: 1.2rem 0;
+    width: 50%;
+
+    font-size: 2rem;
+
+    background: none;
+    border: none;
+
+    position: relative;
+    z-index: 2;
+}
+
+.switch__active {
+    width: 24.5rem;
+    height: 5rem;
+
+    background: $white;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.10);
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    transition: left .25s ease-in;
+}

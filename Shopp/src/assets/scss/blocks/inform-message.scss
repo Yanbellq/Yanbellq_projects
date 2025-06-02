@@ -1,0 +1,22 @@
+.inform-message {
+    padding: 2rem 4rem;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $light-gray;
+    border-top: 2px solid $accent;
+}
+
+.inform-message__link {
+    font-weight: 700;
+    color: $accent;
+
+    transition: color .1s ease-in-out;
+
+    &:hover {
+        color: $black;
+    }
+}

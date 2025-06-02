@@ -1,0 +1,26 @@
+.blog-nav {
+    margin-top: 6rem;
+}
+
+.blog-nav__title {
+    font-size: 2rem;
+}
+
+.blog-nav__list {
+    margin-top: 2.5rem;
+}
+
+.blog-nav__item {
+    margin-bottom: 1.5rem;
+    color: $dark-gray;
+    
+    > .blog-nav__link {
+        color: inherit;
+
+        transition: color .1s ease-in-out;
+
+        &:hover {
+            color: $black;
+        }
+    }
+}

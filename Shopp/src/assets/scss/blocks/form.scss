@@ -1,0 +1,260 @@
+.form {
+    // border: 2px solid red;
+    width: 100%;
+
+    
+    &--footer {
+        width: 40rem;
+    }
+    
+    &--dflex {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &--aic {
+        align-items: center;
+    }
+}
+
+.form__group-big {
+    margin: 5rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 12rem;
+
+    width: 100%;
+}
+
+.form__group {
+    width: 100%;
+
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+
+    border-bottom: 1px solid $gray;
+    
+    &--footer {
+        margin-top: 0;
+        border-bottom: 1px solid $black;
+    }
+
+    &--checkbox {
+        margin-top: 2rem;
+        border: none;
+    }
+
+    &--textarea {
+        margin-bottom: 6rem;
+    }
+}
+
+
+.form__control {
+    display: block;
+    width: 100%;
+    padding: .5rem 0 1.5rem;
+    
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    
+    font-family: inherit;
+    color: $black;
+
+    position: relative;
+    
+    &:has(~ .form__control-clear) {
+        width: 97%;
+    }
+
+    &::placeholder {
+        color: $dark-gray;
+    }
+
+    &--select {
+        color: $dark-gray;
+    }
+    
+    &--checkbox {
+        display: none;
+
+        &:checked + .form__checkbox {
+            background-color: $black;
+            border-color: $black;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+    
+    &--textarea {
+        width: 100%;
+        resize: none;
+    }
+
+    &:focus {
+        ~ .form__control-clear {
+            display: block;
+        }
+    }
+}
+
+.form__control-clear {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: auto;
+
+    cursor: pointer;
+
+    background-color: $gray;
+    border-radius: 50%;
+
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+
+        width: .75rem;
+        height: 1px;
+
+        background-color: $white;
+
+        position: absolute;
+        top: 50%;
+        left: 27%;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+        // -webkit-transform: translateY(-1px) rotate(45deg);
+        // -moz-transform: translateY(-1px) rotate(45deg);
+    }
+    
+    &::after {
+        transform: rotate(-45deg);
+        // -webkit-transform: translateY(-1px) rotate(-45deg);
+        // -moz-transform: translateY(-1px) rotate(-45deg);
+    }
+}
+
+.form__checkbox {
+    height: 1.8rem;
+    width: 1.8rem;
+    
+    background-color: $white;
+    border: 1px solid $black;
+
+    cursor: pointer;
+
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 6px;
+        width: 12px;
+
+        border: 2px solid $white;
+        border-top: none;
+        border-right: none;
+        opacity: 0;
+        
+        position: absolute;
+        top: 3px;
+        left: 2px;
+
+        transform: rotate(-45deg);
+    }
+}
+
+.form__title {
+    margin-top: 6rem;
+    font-weight: 700;
+}
+
+.form__description {
+    padding-left: 1rem;
+
+    color: $black;
+    
+    cursor: pointer;
+    
+    &--post {
+        font-size: 1.2rem;
+        color: $dark-gray;
+    }
+    
+    &--account {
+        margin-top: 1rem;
+        padding: 0;
+
+        font-size: 1.2rem;
+        color: $dark-gray;
+
+        cursor: default;
+    }
+    
+    > a {
+        color: $dark-gray;
+
+        transition: color .1s ease-in-out;
+
+        &:hover {
+            color: $black;
+            text-decoration: underline;
+        }
+    }
+}
+
+.form__line {
+    width: 0;
+    height: 1px;
+
+    background-color: #3137C9;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    transition: width 0.2s linear;
+}
+
+.form__link {
+    margin-top: 2rem;
+    color: $black;
+
+    transition: color .1s ease-in-out;
+
+    &:hover {
+        color: $dark-gray;
+    }
+}
+
+.form__toast{
+    padding: 1.2rem 2.5rem;
+
+    position: fixed;
+    bottom: 5rem;
+    right: 3rem;
+
+    background: $light-gray;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 8px 3px rgba($black, .10);
+    color: $dark-gray;
+
+    transition: transform .2s ease-in;
+    transform: translateX(0);
+    
+    &.hidden {
+        transform: translateX(35rem);   
+    }
+}

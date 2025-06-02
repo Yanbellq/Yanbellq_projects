@@ -1,0 +1,93 @@
+.badge__list {
+    // margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 7rem 3rem;
+
+    // border: 2px solid red;
+
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // gap: 7rem 5.8rem;
+
+    height: 99rem;
+    overflow: hidden;
+}
+
+.badge__item {
+    width: 38rem;
+}
+
+.badge__title {
+    margin-top: 2.4rem;
+    font-size: 2rem;
+}
+
+.badge__price {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: $accent;
+}
+
+.badge__preview {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    &:hover {
+        .badge__preview-hover {
+            transform: translateY(0);
+        }
+    }
+}
+
+.badge__preview-image {
+    max-width: 53rem;
+    max-height: 53rem;
+
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.badge__preview-hover {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $light-gray;
+    padding: 2rem 3rem;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    transform: translateY(7rem);
+    transition: transform .15s linear;
+}
+
+.badge__add {
+    padding: 0;
+    font-weight: 700;
+    color: $black;
+}
+
+.badge__like {
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    &.active {
+        path {
+            fill: red;
+            stroke: red;
+        }
+    }
+}

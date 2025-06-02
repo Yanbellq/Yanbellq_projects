@@ -1,0 +1,136 @@
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    background-color: rgba($black, .8);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-index-modal;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.modal__content {
+    width: 100%;
+    max-width: 50rem;
+    padding: 8rem 8rem 2.5rem;
+    position: relative;
+
+    background-color: $primary;
+    border-radius: 5px;
+    opacity: 0;
+
+    transform: translateY(-5rem);
+    transition: transform 200ms ease-in-out,
+                opacity 200ms ease-in-out;
+    
+    @include breakpoint($tablet-bp) {
+        padding: 5rem 3rem 3rem;
+    }
+
+    &--center {
+        padding: 6rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--story {
+        padding: 0;
+        background: none;
+        width: auto;
+        max-width: none;
+    }
+
+    > .social {
+        display: flex;
+    }
+}
+
+.modal__close {
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: rotate(90deg);
+
+        > .modal__close-btn,
+        > .modal__close-btnbefore,
+        > .modal__close-btn::after {
+            opacity: 1;
+        }
+    }
+}
+
+.modal__close-btn {
+    width: 100%;
+    height: 100%;
+    max-width: 2rem;
+    max-height: 2rem;
+
+    background: none;
+    border: none;
+    opacity: .5;
+
+    position: relative;
+
+    transition: opacity .2s linear;
+
+    &::before {
+        content: "";
+
+        width: 110%;
+        height: 2px;
+
+        background-color: $white;
+        border-radius: 20px;
+
+        position: absolute;
+        top: auto;
+        left: 0;
+
+        transform: rotate(-45deg);
+    }
+    
+    &::after {
+        content: "";
+
+        width: 110%;
+        height: 2px;
+
+        background-color: $white;
+        border-radius: 20px;
+
+        position: absolute;
+        top: auto;
+        left: 0;
+
+        transform: rotate(45deg);
+    }
+}
+
+.modal__video {
+    display: block;
+    margin: 0 auto;
+}

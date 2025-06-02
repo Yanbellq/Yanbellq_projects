@@ -1,0 +1,269 @@
+---
+layout: default
+title: Shop
+---
+
+
+<h1 class="page__title">Shop The Latest</h1>
+
+<div class="content">
+    <aside class="sidebar">
+        <form class="form" action="/">
+            <div class="form__group">
+                <input class="form__control" type="text" name="search" id="search" placeholder="Search...">
+                <label for="search">
+                    <img src="assets/images/search-icon.svg" alt="">
+                </label>
+            </div>
+        </form>
+
+        <div class="filter">
+            <div class="filter__group-big">
+                <div class="filter__group">
+                    <select class="filter__control filter__control--select" name="shopBy" id="shopBy">
+                        <option value="">Shop By</option>
+                        <option value="">1</option>
+                        <option value="">12</option>
+                        <option value="">123</option>
+                    </select>
+                </div>
+                <div class="filter__group">
+                    <select class="filter__control filter__control--select" name="sortBy" id="sortBy">
+                        <option value="">Sort By</option>
+                        <option value="">1</option>
+                        <option value="">12</option>
+                        <option value="">123</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter__group filter__group--range">
+                <div class="filter__range">
+                    <input class="filter__range-left" type="range" name="range-left" id="range-left" min="0" max="100" value="25">
+                    <input class="filter__range-right" type="range" name="range-right" id="range-right" min="0" max="100" value="75">
+
+                    <div class="filter__range-slider">
+                        <div class="filter__range-slider-track"></div>
+                        <div class="filter__range-slider-range"></div>
+                        <div class="filter__range-slider-thumb left"></div>
+                        <div class="filter__range-slider-thumb right"></div>
+                    </div>
+                </div>
+                <div class="filter__description filter__description--range">
+                    <span class="filter__description-price">Price: $40 - $180</span>
+                    <a class="filter__description-link" href="#">Filter</a>
+                </div>
+            </div>
+            <div class="filter__group">
+                <label class="filter__description" for="onSale">On sale</label>
+                <input class="filter__control filter__control--checkbox" type="checkbox" name="onSale" id="onSale">
+            </div>
+            <div class="filter__group">
+                <label class="filter__description" for="inStock">In stock</label>
+                <input class="filter__control filter__control--checkbox" type="checkbox" name="inStock" id="inStock">
+            </div>
+        </div>
+    </aside>
+
+    <ul class="badge__list">
+        <li class="badge__item">
+            <div class="badge__preview">
+                <img class="badge__preview-image" src="https://placehold.co/380" alt="">
+
+                <div class="badge__preview-hover">
+                    <button class="badge__add" type="button">ADD TO CART</>
+
+                    <button class="badge__like" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <g clip-path="url(#clip0_2046_6511)">
+                                <path d="M5.85049 11.9297C6.01088 12.0901 6.2265 12.1795 6.45263 12.1795C6.67613 12.1795 6.897 12.0874 7.05477 11.9297L11.7799 7.20459C12.4977 6.48675 12.8921 5.53227 12.8947 4.51994C12.8947 3.50498 12.5003 2.55049 11.7825 1.83266C11.0647 1.11482 10.1128 0.720408 9.09784 0.720408C8.10128 0.720408 7.16257 1.10168 6.45 1.79585C5.73479 1.09905 4.79346 0.715149 3.79427 0.715149C2.78194 0.715149 1.83009 1.10956 1.11225 1.82477C0.394415 2.5426 0 3.49709 0 4.51205C0 5.52438 0.397044 6.47887 1.11488 7.1967L5.85049 11.9297ZM1.56977 2.28229C2.16402 1.68804 2.95548 1.35936 3.7969 1.35936C4.63832 1.35936 5.43241 1.68804 6.02929 2.28492L6.22387 2.4795C6.28434 2.53998 6.36586 2.57416 6.45263 2.57416C6.53677 2.57416 6.62091 2.53998 6.68139 2.4795L6.87071 2.29018C7.46759 1.6933 8.25905 1.36462 9.1031 1.36462C9.94451 1.36462 10.736 1.6933 11.3302 2.28755C11.9271 2.88443 12.2532 3.67589 12.2532 4.51731C12.2532 5.35873 11.9245 6.15019 11.3276 6.74707L6.59988 11.4748C6.52362 11.551 6.38426 11.551 6.30538 11.4748L1.5724 6.74181C0.975519 6.14493 0.64684 5.35347 0.64684 4.51205C0.64684 3.67063 0.97552 2.87917 1.56977 2.28229Z" fill="black" stroke="black" stroke-width="0.154737"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2046_6511">
+                                    <rect width="12.8947" height="12.8947" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h4 class="badge__title">Lira Earrings</h4>
+            <p class="badge__price">$ 20,00</p>
+        </li>
+        <li class="badge__item">
+            <div class="badge__preview">
+                <img class="badge__preview-image" src="https://placehold.co/380" alt="">
+
+                <div class="badge__preview-hover">
+                    <button class="badge__add" type="button">ADD TO CART</>
+
+                    <button class="badge__like" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <g clip-path="url(#clip0_2046_6511)">
+                                <path d="M5.85049 11.9297C6.01088 12.0901 6.2265 12.1795 6.45263 12.1795C6.67613 12.1795 6.897 12.0874 7.05477 11.9297L11.7799 7.20459C12.4977 6.48675 12.8921 5.53227 12.8947 4.51994C12.8947 3.50498 12.5003 2.55049 11.7825 1.83266C11.0647 1.11482 10.1128 0.720408 9.09784 0.720408C8.10128 0.720408 7.16257 1.10168 6.45 1.79585C5.73479 1.09905 4.79346 0.715149 3.79427 0.715149C2.78194 0.715149 1.83009 1.10956 1.11225 1.82477C0.394415 2.5426 0 3.49709 0 4.51205C0 5.52438 0.397044 6.47887 1.11488 7.1967L5.85049 11.9297ZM1.56977 2.28229C2.16402 1.68804 2.95548 1.35936 3.7969 1.35936C4.63832 1.35936 5.43241 1.68804 6.02929 2.28492L6.22387 2.4795C6.28434 2.53998 6.36586 2.57416 6.45263 2.57416C6.53677 2.57416 6.62091 2.53998 6.68139 2.4795L6.87071 2.29018C7.46759 1.6933 8.25905 1.36462 9.1031 1.36462C9.94451 1.36462 10.736 1.6933 11.3302 2.28755C11.9271 2.88443 12.2532 3.67589 12.2532 4.51731C12.2532 5.35873 11.9245 6.15019 11.3276 6.74707L6.59988 11.4748C6.52362 11.551 6.38426 11.551 6.30538 11.4748L1.5724 6.74181C0.975519 6.14493 0.64684 5.35347 0.64684 4.51205C0.64684 3.67063 0.97552 2.87917 1.56977 2.28229Z" fill="black" stroke="black" stroke-width="0.154737"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2046_6511">
+                                    <rect width="12.8947" height="12.8947" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h4 class="badge__title">Lira Earrings</h4>
+            <p class="badge__price">$ 20,00</p>
+        </li>
+        <li class="badge__item">
+            <div class="badge__preview">
+                <img class="badge__preview-image" src="https://placehold.co/380" alt="">
+
+                <div class="badge__preview-hover">
+                    <button class="badge__add" type="button">ADD TO CART</>
+
+                    <button class="badge__like" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <g clip-path="url(#clip0_2046_6511)">
+                                <path d="M5.85049 11.9297C6.01088 12.0901 6.2265 12.1795 6.45263 12.1795C6.67613 12.1795 6.897 12.0874 7.05477 11.9297L11.7799 7.20459C12.4977 6.48675 12.8921 5.53227 12.8947 4.51994C12.8947 3.50498 12.5003 2.55049 11.7825 1.83266C11.0647 1.11482 10.1128 0.720408 9.09784 0.720408C8.10128 0.720408 7.16257 1.10168 6.45 1.79585C5.73479 1.09905 4.79346 0.715149 3.79427 0.715149C2.78194 0.715149 1.83009 1.10956 1.11225 1.82477C0.394415 2.5426 0 3.49709 0 4.51205C0 5.52438 0.397044 6.47887 1.11488 7.1967L5.85049 11.9297ZM1.56977 2.28229C2.16402 1.68804 2.95548 1.35936 3.7969 1.35936C4.63832 1.35936 5.43241 1.68804 6.02929 2.28492L6.22387 2.4795C6.28434 2.53998 6.36586 2.57416 6.45263 2.57416C6.53677 2.57416 6.62091 2.53998 6.68139 2.4795L6.87071 2.29018C7.46759 1.6933 8.25905 1.36462 9.1031 1.36462C9.94451 1.36462 10.736 1.6933 11.3302 2.28755C11.9271 2.88443 12.2532 3.67589 12.2532 4.51731C12.2532 5.35873 11.9245 6.15019 11.3276 6.74707L6.59988 11.4748C6.52362 11.551 6.38426 11.551 6.30538 11.4748L1.5724 6.74181C0.975519 6.14493 0.64684 5.35347 0.64684 4.51205C0.64684 3.67063 0.97552 2.87917 1.56977 2.28229Z" fill="black" stroke="black" stroke-width="0.154737"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2046_6511">
+                                    <rect width="12.8947" height="12.8947" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h4 class="badge__title">Lira Earrings</h4>
+            <p class="badge__price">$ 20,00</p>
+        </li>
+        <li class="badge__item">
+            <div class="badge__preview">
+                <img class="badge__preview-image" src="https://placehold.co/380" alt="">
+
+                <div class="badge__preview-hover">
+                    <button class="badge__add" type="button">ADD TO CART</>
+
+                    <button class="badge__like" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <g clip-path="url(#clip0_2046_6511)">
+                                <path d="M5.85049 11.9297C6.01088 12.0901 6.2265 12.1795 6.45263 12.1795C6.67613 12.1795 6.897 12.0874 7.05477 11.9297L11.7799 7.20459C12.4977 6.48675 12.8921 5.53227 12.8947 4.51994C12.8947 3.50498 12.5003 2.55049 11.7825 1.83266C11.0647 1.11482 10.1128 0.720408 9.09784 0.720408C8.10128 0.720408 7.16257 1.10168 6.45 1.79585C5.73479 1.09905 4.79346 0.715149 3.79427 0.715149C2.78194 0.715149 1.83009 1.10956 1.11225 1.82477C0.394415 2.5426 0 3.49709 0 4.51205C0 5.52438 0.397044 6.47887 1.11488 7.1967L5.85049 11.9297ZM1.56977 2.28229C2.16402 1.68804 2.95548 1.35936 3.7969 1.35936C4.63832 1.35936 5.43241 1.68804 6.02929 2.28492L6.22387 2.4795C6.28434 2.53998 6.36586 2.57416 6.45263 2.57416C6.53677 2.57416 6.62091 2.53998 6.68139 2.4795L6.87071 2.29018C7.46759 1.6933 8.25905 1.36462 9.1031 1.36462C9.94451 1.36462 10.736 1.6933 11.3302 2.28755C11.9271 2.88443 12.2532 3.67589 12.2532 4.51731C12.2532 5.35873 11.9245 6.15019 11.3276 6.74707L6.59988 11.4748C6.52362 11.551 6.38426 11.551 6.30538 11.4748L1.5724 6.74181C0.975519 6.14493 0.64684 5.35347 0.64684 4.51205C0.64684 3.67063 0.97552 2.87917 1.56977 2.28229Z" fill="black" stroke="black" stroke-width="0.154737"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2046_6511">
+                                    <rect width="12.8947" height="12.8947" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h4 class="badge__title">Lira Earrings</h4>
+            <p class="badge__price">$ 20,00</p>
+        </li>
+        <li class="badge__item">
+            <div class="badge__preview">
+                <img class="badge__preview-image" src="https://placehold.co/380" alt="">
+
+                <div class="badge__preview-hover">
+                    <button class="badge__add" type="button">ADD TO CART</>
+
+                    <button class="badge__like" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <g clip-path="url(#clip0_2046_6511)">
+                                <path d="M5.85049 11.9297C6.01088 12.0901 6.2265 12.1795 6.45263 12.1795C6.67613 12.1795 6.897 12.0874 7.05477 11.9297L11.7799 7.20459C12.4977 6.48675 12.8921 5.53227 12.8947 4.51994C12.8947 3.50498 12.5003 2.55049 11.7825 1.83266C11.0647 1.11482 10.1128 0.720408 9.09784 0.720408C8.10128 0.720408 7.16257 1.10168 6.45 1.79585C5.73479 1.09905 4.79346 0.715149 3.79427 0.715149C2.78194 0.715149 1.83009 1.10956 1.11225 1.82477C0.394415 2.5426 0 3.49709 0 4.51205C0 5.52438 0.397044 6.47887 1.11488 7.1967L5.85049 11.9297ZM1.56977 2.28229C2.16402 1.68804 2.95548 1.35936 3.7969 1.35936C4.63832 1.35936 5.43241 1.68804 6.02929 2.28492L6.22387 2.4795C6.28434 2.53998 6.36586 2.57416 6.45263 2.57416C6.53677 2.57416 6.62091 2.53998 6.68139 2.4795L6.87071 2.29018C7.46759 1.6933 8.25905 1.36462 9.1031 1.36462C9.94451 1.36462 10.736 1.6933 11.3302 2.28755C11.9271 2.88443 12.2532 3.67589 12.2532 4.51731C12.2532 5.35873 11.9245 6.15019 11.3276 6.74707L6.59988 11.4748C6.52362 11.551 6.38426 11.551 6.30538 11.4748L1.5724 6.74181C0.975519 6.14493 0.64684 5.35347 0.64684 4.51205C0.64684 3.67063 0.97552 2.87917 1.56977 2.28229Z" fill="black" stroke="black" stroke-width="0.154737"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2046_6511">
+                                    <rect width="12.8947" height="12.8947" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h4 class="badge__title">Lira Earrings</h4>
+            <p class="badge__price">$ 20,00</p>
+        </li>
+        <li class="badge__item">
+            <div class="badge__preview">
+                <img class="badge__preview-image" src="https://placehold.co/380" alt="">
+
+                <div class="badge__preview-hover">
+                    <button class="badge__add" type="button">ADD TO CART</>
+
+                    <button class="badge__like" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <g clip-path="url(#clip0_2046_6511)">
+                                <path d="M5.85049 11.9297C6.01088 12.0901 6.2265 12.1795 6.45263 12.1795C6.67613 12.1795 6.897 12.0874 7.05477 11.9297L11.7799 7.20459C12.4977 6.48675 12.8921 5.53227 12.8947 4.51994C12.8947 3.50498 12.5003 2.55049 11.7825 1.83266C11.0647 1.11482 10.1128 0.720408 9.09784 0.720408C8.10128 0.720408 7.16257 1.10168 6.45 1.79585C5.73479 1.09905 4.79346 0.715149 3.79427 0.715149C2.78194 0.715149 1.83009 1.10956 1.11225 1.82477C0.394415 2.5426 0 3.49709 0 4.51205C0 5.52438 0.397044 6.47887 1.11488 7.1967L5.85049 11.9297ZM1.56977 2.28229C2.16402 1.68804 2.95548 1.35936 3.7969 1.35936C4.63832 1.35936 5.43241 1.68804 6.02929 2.28492L6.22387 2.4795C6.28434 2.53998 6.36586 2.57416 6.45263 2.57416C6.53677 2.57416 6.62091 2.53998 6.68139 2.4795L6.87071 2.29018C7.46759 1.6933 8.25905 1.36462 9.1031 1.36462C9.94451 1.36462 10.736 1.6933 11.3302 2.28755C11.9271 2.88443 12.2532 3.67589 12.2532 4.51731C12.2532 5.35873 11.9245 6.15019 11.3276 6.74707L6.59988 11.4748C6.52362 11.551 6.38426 11.551 6.30538 11.4748L1.5724 6.74181C0.975519 6.14493 0.64684 5.35347 0.64684 4.51205C0.64684 3.67063 0.97552 2.87917 1.56977 2.28229Z" fill="black" stroke="black" stroke-width="0.154737"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2046_6511">
+                                    <rect width="12.8947" height="12.8947" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h4 class="badge__title">Lira Earrings</h4>
+            <p class="badge__price">$ 20,00</p>
+        </li>
+        <li class="badge__item">
+            <div class="badge__preview">
+                <img class="badge__preview-image" src="https://placehold.co/380" alt="">
+
+                <div class="badge__preview-hover">
+                    <button class="badge__add" type="button">ADD TO CART</>
+
+                    <button class="badge__like" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <g clip-path="url(#clip0_2046_6511)">
+                                <path d="M5.85049 11.9297C6.01088 12.0901 6.2265 12.1795 6.45263 12.1795C6.67613 12.1795 6.897 12.0874 7.05477 11.9297L11.7799 7.20459C12.4977 6.48675 12.8921 5.53227 12.8947 4.51994C12.8947 3.50498 12.5003 2.55049 11.7825 1.83266C11.0647 1.11482 10.1128 0.720408 9.09784 0.720408C8.10128 0.720408 7.16257 1.10168 6.45 1.79585C5.73479 1.09905 4.79346 0.715149 3.79427 0.715149C2.78194 0.715149 1.83009 1.10956 1.11225 1.82477C0.394415 2.5426 0 3.49709 0 4.51205C0 5.52438 0.397044 6.47887 1.11488 7.1967L5.85049 11.9297ZM1.56977 2.28229C2.16402 1.68804 2.95548 1.35936 3.7969 1.35936C4.63832 1.35936 5.43241 1.68804 6.02929 2.28492L6.22387 2.4795C6.28434 2.53998 6.36586 2.57416 6.45263 2.57416C6.53677 2.57416 6.62091 2.53998 6.68139 2.4795L6.87071 2.29018C7.46759 1.6933 8.25905 1.36462 9.1031 1.36462C9.94451 1.36462 10.736 1.6933 11.3302 2.28755C11.9271 2.88443 12.2532 3.67589 12.2532 4.51731C12.2532 5.35873 11.9245 6.15019 11.3276 6.74707L6.59988 11.4748C6.52362 11.551 6.38426 11.551 6.30538 11.4748L1.5724 6.74181C0.975519 6.14493 0.64684 5.35347 0.64684 4.51205C0.64684 3.67063 0.97552 2.87917 1.56977 2.28229Z" fill="black" stroke="black" stroke-width="0.154737"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2046_6511">
+                                    <rect width="12.8947" height="12.8947" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h4 class="badge__title">Lira Earrings</h4>
+            <p class="badge__price">$ 20,00</p>
+        </li>
+        <li class="badge__item">
+            <div class="badge__preview">
+                <img class="badge__preview-image" src="https://placehold.co/380" alt="">
+
+                <div class="badge__preview-hover">
+                    <button class="badge__add" type="button">ADD TO CART</>
+
+                    <button class="badge__like" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                            <g clip-path="url(#clip0_2046_6511)">
+                                <path d="M5.85049 11.9297C6.01088 12.0901 6.2265 12.1795 6.45263 12.1795C6.67613 12.1795 6.897 12.0874 7.05477 11.9297L11.7799 7.20459C12.4977 6.48675 12.8921 5.53227 12.8947 4.51994C12.8947 3.50498 12.5003 2.55049 11.7825 1.83266C11.0647 1.11482 10.1128 0.720408 9.09784 0.720408C8.10128 0.720408 7.16257 1.10168 6.45 1.79585C5.73479 1.09905 4.79346 0.715149 3.79427 0.715149C2.78194 0.715149 1.83009 1.10956 1.11225 1.82477C0.394415 2.5426 0 3.49709 0 4.51205C0 5.52438 0.397044 6.47887 1.11488 7.1967L5.85049 11.9297ZM1.56977 2.28229C2.16402 1.68804 2.95548 1.35936 3.7969 1.35936C4.63832 1.35936 5.43241 1.68804 6.02929 2.28492L6.22387 2.4795C6.28434 2.53998 6.36586 2.57416 6.45263 2.57416C6.53677 2.57416 6.62091 2.53998 6.68139 2.4795L6.87071 2.29018C7.46759 1.6933 8.25905 1.36462 9.1031 1.36462C9.94451 1.36462 10.736 1.6933 11.3302 2.28755C11.9271 2.88443 12.2532 3.67589 12.2532 4.51731C12.2532 5.35873 11.9245 6.15019 11.3276 6.74707L6.59988 11.4748C6.52362 11.551 6.38426 11.551 6.30538 11.4748L1.5724 6.74181C0.975519 6.14493 0.64684 5.35347 0.64684 4.51205C0.64684 3.67063 0.97552 2.87917 1.56977 2.28229Z" fill="black" stroke="black" stroke-width="0.154737"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2046_6511">
+                                    <rect width="12.8947" height="12.8947" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h4 class="badge__title">Lira Earrings</h4>
+            <p class="badge__price">$ 20,00</p>
+        </li>
+    </ul>
+</div>

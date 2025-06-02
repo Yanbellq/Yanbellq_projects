@@ -1,0 +1,82 @@
+---
+layout: default
+title: My Account
+---
+
+<h1 class="page__title">My Account</h1>
+
+<ul class="tab__list">
+    <li class="tab__item active" id="tab1">Dashboard</li>
+    <li class="tab__item" id="tab2">Orders</li>
+    <li class="tab__item" id="tab3">Downloads</li>
+    <li class="tab__item" id="tab4">Addresses</li>
+    <li class="tab__item" id="tab5">Account details</li>
+    <li class="tab__item" id="tab6">Logout</li>
+</ul>
+
+<div class="tab__content tab__content--dashboard disabled" id="tab-content1">
+    <p class="tab__data">
+        Hello Vitatheme (not Vitatheme? <a class="tab__link" href="#">Log out</a> )
+    </p>
+    <p class="tab__data">
+        From your account dashboard you can view your <a class="tab__link" href="#">recent orders</a>, manage your <a class="tab__link" href="#">shipping and billing addresses</a>, and edit your <a class="tab__link" href="#">password and account details</a>.
+    </p>
+</div>
+
+<div class="tab__content tab__content--order disabled" id="tab-content2">
+    <div class="inform-message">
+        <p class="inform-message__text">No order has been made yet.</p>
+        <a class="inform-message__link" href="#">BROWSE PRODUCT</a>
+    </div>
+</div>
+
+<div class="tab__content tab__content--download disabled" id="tab-content3">
+    <div class="inform-message">
+        <p class="inform-message__text">No downloads available yet.</p>
+        <a class="inform-message__link" href="#">BROWSE PRODUCT</a>
+    </div>
+</div>
+
+<div class="tab__content tab__content--address disabled" id="tab-content4">
+    <p class="tab__data">The following addresses will be used on the checkout page by default.</p>
+
+    
+</div>
+
+<div class="tab__content tab__content--account disabled" id="tab-content5">
+    <div class="container">
+        <h3 class="tab__title">Account details</h3>
+
+        <form class="form form-dflex" action="/" method="post">
+            <div class="form__group">
+                <input class="form__control" type="text" name="account-name" id="account-name" placeholder="First name*">
+            </div>
+            <div class="form__group">
+                <input class="form__control" type="text" name="account-surname" id="account-surname" placeholder="Last name*">
+            </div>
+            <div>
+                <div class="form__group">
+                    <input class="form__control" type="text" name="account-display-name" id="account-display-name" placeholder="Display name*">
+                </div>
+                <p class="form__description form__description--account">This will be how your name will be displayed in the account section and in reviews.</p>
+            </div>
+            <div class="form__group">
+                <input class="form__control" type="email" name="account-email" id="account-email" placeholder="Email address*">
+            </div>
+
+            <h4 class="form__title">Password change</h4>
+
+            <div class="form__group">
+                <input class="form__control" type="password" name="account-current-password" id="account-current-password" placeholder="Current password (leave blank to leave unchanged)">
+            </div>
+            <div class="form__group">
+                <input class="form__control" type="password" name="account-new-password" id="account-new-password" placeholder="New password (leave blank to leave unchanged)">
+            </div>
+            <div class="form__group">
+                <input class="form__control" type="password" name="account-confirm-password" id="account-confirm-password" placeholder="Confirm new password">
+            </div>
+
+            <button class="btn btn--solid btn--submit btn--xxl" type="submit">SAVE CHANGES</button>
+        </form>
+    </div>
+</div>
