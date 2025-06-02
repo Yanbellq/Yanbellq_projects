@@ -1,0 +1,32 @@
+.search {
+    width: 100%;
+    max-width: 21rem;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+
+    @include breakpoint($tablet-bp) {
+        // height: 4rem;
+        padding: 1rem;
+    }
+}
+
+.search__input {
+    width: 100%;
+
+    background: transparent;
+    border: none;
+
+    font-family: inherit;
+    font-size: 1.3rem;
+    color: $white;
+
+    &::placeholder {
+        color: rgba($white, .4);
+    }
+
+    @include breakpoint($tablet-bp) {
+        font-size: 1.6rem;
+    }
+}

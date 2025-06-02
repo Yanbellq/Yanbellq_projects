@@ -1,0 +1,19 @@
+.social {
+    display: flex;
+    gap: 15px;
+
+    .social__item {
+        .social__link {
+            img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 0;
+                border: none;
+            }
+        }
+    }
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+}

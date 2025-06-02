@@ -1,0 +1,16 @@
+.social {
+    display: flex;
+    gap: 2rem;
+
+    font-size: 2rem;
+}
+
+.social__link {
+    color: $dark-gray;
+
+    transition: color .2s ease-in-out;
+
+    &:hover {
+        color: $black;
+    }
+}

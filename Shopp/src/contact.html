@@ -1,0 +1,40 @@
+---
+layout: default
+title: Contact
+---
+
+<h1 class="page__title">Contact Us</h1>
+<h2 class="page__subtitle">Say Hello send us your thoughts about our products or share <br> your ideas with our Team!</h2>
+
+<div class="container container--xl">
+    <form class="form form--dflex form--aic" action="/" method="post">
+        <div class="form__group-big">
+            <div class="form__group">
+                <input class="form__control" type="text" name="name" id="name" placeholder="First name">
+            </div>
+
+            <div class="form__group">
+                <input class="form__control" type="text" name="surname" id="surname" placeholder="Last name">
+            </div>
+
+            <div class="form__group">
+                <input class="form__control" type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="form__group">
+                <select class="form__control form__control--select" name="subject" id="subject">
+                    <option class="form__control" value="default" selected>Subject</option>
+                    <option class="form__control" value="1">1</option>
+                    <option class="form__control" value="2">2</option>
+                    <option class="form__control" value="3">3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form__group form__group--textarea">
+            <textarea class="form__control form__control--textarea" name="comment" id="comment" placeholder="Message"></textarea>
+        </div>
+
+        <button class="btn btn--solid btn--xl" type="submit">SEND</button>
+    </form>
+</div>

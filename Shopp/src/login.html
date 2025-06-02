@@ -1,0 +1,55 @@
+---
+layout: default
+title: My account
+---
+
+<h1 class="page__title">My account</h1>
+
+<div class="container container--sm">
+    <div class="switch">
+        <button class="switch__btn" type="button" data-signIn>Sign in</button>
+        <span class="switch__active"></span>
+        <button class="switch__btn" type="button" data-signUp>Register</button>
+    </div>
+
+    <form class="form form--dflex" data-signInForm>
+        <div class="form__group">
+            <input class="form__control" type="email" name="email" id="emailSignIn" placeholder="Email">
+        </div>
+        
+        <div class="form__group">
+            <input class="form__control" type="password" name="password" id="passwordSignIn" placeholder="Password">
+        </div>
+
+        <div class="form__group form__group--checkbox">
+            <input class="form__control form__control--checkbox" type="checkbox" name="checkbox" id="checkboxSignIn">
+            <label class="form__checkbox" for="checkboxSignIn"></label>
+            <label class="form__description cl-black" for="checkboxSignIn">Remember me</label>
+        </div>
+
+        <button class="btn btn--solid btn--xl btn--submit" type="submit">SIGN IN</button>
+        <div class="form__toast hidden" id="message">Hui Mame</div>
+    </form>
+    
+    <form class="form form--dflex disabled" action="/" method="post" data-signUpForm>
+        <div class="form__group">
+            <input class="form__control" type="email" name="email" id="emailSignUp" placeholder="Email">
+        </div>
+        
+        <div class="form__group">
+            <input class="form__control" type="password" name="password" id="passwordSignUp" placeholder="Password">
+        </div>
+
+        <div class="form__group form__group--checkbox">
+            <input class="form__control form__control--checkbox" type="checkbox" name="checkbox" id="checkboxSignUp">
+            <label class="form__checkbox" for="checkboxSignUp"></label>
+            <label class="form__description" for="checkboxSignUp">I agree all statements in
+                <a class="" href="privacy.html">Terms of use</a>
+            </label>
+        </div>
+
+        <button class="btn btn--solid btn--xl btn--submit" type="submit">Register</button>
+    </form>
+
+    <a class="form__link" href="reset.html" data-resetLink>Have you forgotten your password?</a>
+</div>
