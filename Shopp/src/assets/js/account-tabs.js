@@ -38,4 +38,34 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+
+    const billingLink = document.getElementById('billing-address-link');
+    const billingForm = document.getElementById('billing-address-form');
+    const shippingLink = document.getElementById('shipping-address-link');
+    const shippingForm = document.getElementById('shipping-address-form');
+
+    billingLink.addEventListener('click', e => {
+        billingForm.classList.remove('disabled');
+        e.currentTarget.parentElement.classList.add('disabled');
+    })
+    shippingLink.addEventListener('click', e => {
+        shippingForm.classList.remove('disabled');
+        e.currentTarget.parentElement.classList.add('disabled');
+    })
+
+
+    const orderLink = document.getElementById('order-link');
+    const orderTable = document.getElementById('order-table');
+    const downloadLink = document.getElementById('download-link');
+    const downloadTable = document.getElementById('download-table');
+
+    orderLink.addEventListener('click', e => {
+        orderTable.classList.remove('disabled');
+        e.currentTarget.parentElement.classList.add('disabled');
+    })
+    downloadLink.addEventListener('click', e => {
+        downloadTable.classList.remove('disabled');
+        e.currentTarget.parentElement.classList.add('disabled');
+    })
 });

@@ -15,6 +15,16 @@
     &--aic {
         align-items: center;
     }
+
+    &--address {
+        > .form__group-big {
+            margin-top: 0;
+
+            > .form__group {
+                margin-top: 0;
+            }
+        }
+    }
 }
 
 .form__group-big {
@@ -255,6 +265,6 @@
     transform: translateX(0);
     
     &.hidden {
-        transform: translateX(35rem);   
+        transform: translateX(40rem);   
     }
 }
