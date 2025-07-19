@@ -530,6 +530,14 @@ button {
     align-items: center;
 }
 
+.form--address > .form__group-big {
+    margin-top: 0;
+}
+
+.form--address > .form__group-big > .form__group {
+    margin-top: 0;
+}
+
 .form__group-big {
     margin: 5rem 0;
     display: grid;
@@ -806,6 +814,10 @@ button {
     padding: 1.5rem 0;
 }
 
+.btn--address {
+    margin-top: 6.5rem;
+}
+
 .btn--xxl {
     width: 100%;
 }
@@ -835,6 +847,12 @@ button {
     display: -ms-flexbox;
     display: flex;
     gap: 5rem;
+}
+
+.content--address {
+    gap: 10rem;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .sidebar {
@@ -1180,6 +1198,60 @@ input[type=range]::-webkit-slider-thumb {
 
 .products__link:hover {
     color: #000000;
+}
+
+.order-list {
+    width: 100%;
+}
+
+.order-list__header {
+    border-bottom: 1px solid #000000;
+}
+
+.order-list__header tr td:first-of-type {
+    width: 26%;
+}
+
+.order-list__header tr td:nth-of-type(2) {
+    width: 20%;
+}
+
+.order-list__header tr td:nth-of-type(3) {
+    width: 21%;
+}
+
+.order-list__header tr td:nth-of-type(4) {
+    width: 17%;
+}
+
+.order-list__header tr td:last-of-type {
+    width: 16%;
+}
+
+.order-list__title {
+    padding: 1.5rem 0;
+}
+
+.order-list__item {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.order-list__data {
+    padding: 2.5rem 0;
+    color: #707070;
+}
+
+.order-list__data a {
+    color: #A18A68;
+    transition: color 0.1s ease-in-out;
+}
+
+.order-list__data a:hover {
+    color: #000000;
+}
+
+.order-list__data span {
+    color: #707070;
 }
 
 .badge__list {
@@ -1585,6 +1657,35 @@ input[type=range]::-webkit-slider-thumb {
     color: #000000;
 }
 
+.address {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.address__title {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.address__link {
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: 700;
+    color: #A18A68;
+    transition: color 0.1s ease-in-out;
+}
+
+.address__link:hover {
+    color: #000000;
+}
+
+.address__text {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #707070;
+}
+
 .inform-message {
     padding: 2rem 4rem;
     width: 100%;
@@ -1601,6 +1702,7 @@ input[type=range]::-webkit-slider-thumb {
 .inform-message__link {
     font-weight: 700;
     color: #A18A68;
+    cursor: pointer;
     transition: color 0.1s ease-in-out;
 }
 

@@ -1,3 +1,6 @@
+import API from "./services/api";
+
+
 const signIn = document.querySelector('[data-signIn]');
 const signInForm = document.querySelector('[data-signInForm]');
 const signUp = document.querySelector('[data-signUp]');
@@ -44,51 +47,87 @@ if (signIn && signUp && signInForm && signUpForm && resetLink && switchActive) {
 
 const messageDiv = document.getElementById('message');
 
+function showMessage(text, type) {
+    messageDiv.textContent = text;
+    messageDiv.classList.add(type);
+    messageDiv.classList.remove('hidden');
+
+    setTimeout(function() {
+        messageDiv.classList.remove(type);
+        messageDiv.classList.add('hidden');
+    }, 3000);
+}
+// password: 123@maksTest!
+
 document.addEventListener('DOMContentLoaded', function() {
 
     signInForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
         const emailInput = document.getElementById('emailSignIn').value;
-        const passwordInput = document.getElementById('passwordSignIn').value;
+        const passwordInput = document.getElementById('passwordSignIn').value;        
 
-        // Завантаження даних користувачів з локального файлу (НЕ РЕКОМЕНДУЄТЬСЯ ДЛЯ РЕАЛЬНИХ ПРОЕКТІВ)
-        fetch('users.json')
-            .then(response => response.json())
-            .then(users => {
-                const user = users.find(u => u.username === emailInput && u.password === passwordInput);
+        const signIn = async () => {
+            
+            try {
+                const resp = await API.loginUser({username: emailInput, password: passwordInput})
+                console.log(resp);
 
-                if (user) {
+                if (resp) {
                     showMessage('Успішна авторизація!', 'success');
-                    localStorage.setItem('loggedInUser', JSON.stringify({ username: user.username, name: user.name }));
+                    localStorage.setItem('loggedInUser', JSON.stringify({ token: resp.token }));
 
-                    setTimeout(function() {
+                    setTimeout(() => {
                         window.location.href = './account.html';
-                    }, 2000);
+                    }, 1500);
                 } else {
-                    showMessage('Введіть будь-ласка дані', 'error');
-
-                    if (emailInput !== "" && passwordInput !== "") {
-                        window.location.href = './error-404.html';
+                    if (emailInput == '' || passwordInput == '' ) {
+                        showMessage('Введіть будь-ласка дані', 'error');
+                    } else {
+                        showMessage('Невірний email або пароль', 'error');
                     }
+                    // window.location.href = './error-404.html';
                 }
-            })
-            .catch(error => {
-                console.error('Помилка завантаження файлу users.json:', error);
-                showMessage('Сталася помилка при авторизації.', 'error');
-            });
+            } catch (error) {
+                showMessage('Вибачте будь-ласка, проблеми на сайті', 'error')
+            }
+        }
+
+        signIn();
     });
 
-    function showMessage(text, type) {
-        messageDiv.textContent = text;
-        messageDiv.classList.add(type);
-        messageDiv.classList.remove('hidden');
 
-        setTimeout(function() {
-            messageDiv.classList.remove(type);
-            messageDiv.classList.add('hidden');
-        }, 3000);
-    }
+
+
+    signUpForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const emailInput = document.getElementById('emailSignUp').value;
+        const passwordInput = document.getElementById('passwordSignUp').value; 
+
+        const signUp = async () => {
+            try {
+                const resp = await API.registerUser({username: emailInput, password: passwordInput})
+
+                if (resp) {
+                    showMessage('Успішна реєстрація!', 'success');
+                    localStorage.setItem('loggedInUser', JSON.stringify({ token: resp.token }));
+
+                    setTimeout(() => {
+                        window.location.href = './account.html';
+                    }, 1500);
+                } else {
+                    if (emailInput == '' || passwordInput == '' ) {
+                        showMessage('Введіть будь-ласка дані', 'error');
+                    } else {
+                        showMessage('Невірний email або пароль', 'error');
+                    }
+                }
+
+            } catch (error) {
+                showMessage('Вибачте будь-ласка, проблеми на сайті', 'error')
+            }
+        }
+        signUp();
+    })
 });
-
-// console.log(messageDiv.innerHTML);

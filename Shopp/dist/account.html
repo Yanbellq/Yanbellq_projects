@@ -86,21 +86,269 @@
             <div class="tab__content tab__content--order disabled" id="tab-content2">
                 <div class="inform-message">
                     <p class="inform-message__text">No order has been made yet.</p>
-                    <a class="inform-message__link" href="#">BROWSE PRODUCT</a>
+                    <a class="inform-message__link" id="order-link">BROWSE PRODUCT</a>
                 </div>
+            
+                <table class="order-list disabled" id="order-table">
+                    <thead class="order-list__header">
+                        <tr>
+                            <td class="order-list__title">
+                                <h3>ORDER NUMBER</h3>
+                            </td>
+                            <td class="order-list__title">
+                                <h3>DATE</h3>
+                            </td>
+                            <td class="order-list__title">
+                                <h3>STATUS</h3>
+                            </td>
+                            <td class="order-list__title">
+                                <h3>TOTAL</h3>
+                            </td>
+                            <td class="order-list__title">
+                                <h3>ACTIONS</h3>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="order-list__body">
+                        <tr class="order-list__item">
+                            <td class="order-list__data">
+                                <p>7643980998990</p>
+                            </td>
+                            <td class="order-list__data">
+                                <time datetime="2021-10-08">October 8,2021</time>
+                            </td>
+                            <td class="order-list__data">
+                                <p>Delivered</p>
+                            </td>
+                            <td class="order-list__data">
+                                <p>$ 105</p>
+                            </td>
+                            <td class="order-list__data">
+                                <a href="#">View Order</a>
+                            </td>
+                        </tr>
+                        <tr class="order-list__item">
+                            <td class="order-list__data">
+                                <p>943980998990</p>
+                            </td>
+                            <td class="order-list__data">
+                                <time datetime="2021-10-08">October 8,2021</time>
+                            </td>
+                            <td class="order-list__data">
+                                <p>Processing</p>
+                            </td>
+                            <td class="order-list__data">
+                                <p>$ 100</p>
+                            </td>
+                            <td class="order-list__data">
+                                <a href="#">View Order</a>
+                            </td>
+                        </tr>
+                        <tr class="order-list__item">
+                            <td class="order-list__data">
+                                <p>879980998990</p>
+                            </td>
+                            <td class="order-list__data">
+                                <time datetime="2020-10-08">October 8,2020</time>
+                            </td>
+                            <td class="order-list__data">
+                                <p>Delivered</p>
+                            </td>
+                            <td class="order-list__data">
+                                <p>$ 65</p>
+                            </td>
+                            <td class="order-list__data">
+                                <a href="#">View Order</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             
             <div class="tab__content tab__content--download disabled" id="tab-content3">
                 <div class="inform-message">
                     <p class="inform-message__text">No downloads available yet.</p>
-                    <a class="inform-message__link" href="#">BROWSE PRODUCT</a>
+                    <a class="inform-message__link" id="download-link">BROWSE PRODUCT</a>
                 </div>
+            
+                <table class="order-list disabled" id="download-table">
+                    <thead class="order-list__header">
+                        <tr>
+                            <td class="order-list__title">
+                                <h3>ORDER NUMBER</h3>
+                            </td>
+                            <td class="order-list__title">
+                                <h3>DATE</h3>
+                            </td>
+                            <td class="order-list__title">
+                                <h3>STATUS</h3>
+                            </td>
+                            <td class="order-list__title">
+                                <h3>TOTAL</h3>
+                            </td>
+                            <td class="order-list__title">
+                                <h3>ACTIONS</h3>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="order-list__body">
+                        <tr class="order-list__item">
+                            <td class="order-list__data">
+                                <p>7643980998990</p>
+                            </td>
+                            <td class="order-list__data">
+                                <time datetime="2021-10-08">October 8,2021</time>
+                            </td>
+                            <td class="order-list__data">
+                                <p>Delivered</p>
+                            </td>
+                            <td class="order-list__data">
+                                <p>$ 105</p>
+                            </td>
+                            <td class="order-list__data">
+                                <a href="#">View Order</a>
+                                <span> | </span>
+                                <a href="#">Download</a>
+                            </td>
+                        </tr>
+                        <tr class="order-list__item">
+                            <td class="order-list__data">
+                                <p>943980998990</p>
+                            </td>
+                            <td class="order-list__data">
+                                <time datetime="2021-10-08">October 8,2021</time>
+                            </td>
+                            <td class="order-list__data">
+                                <p>Processing</p>
+                            </td>
+                            <td class="order-list__data">
+                                <p>$ 100</p>
+                            </td>
+                            <td class="order-list__data">
+                                <a href="#">View Order</a>
+                                <span> | </span>
+                                <a href="#">Download</a>
+                            </td>
+                        </tr>
+                        <tr class="order-list__item">
+                            <td class="order-list__data">
+                                <p>879980998990</p>
+                            </td>
+                            <td class="order-list__data">
+                                <time datetime="2020-10-08">October 8,2020</time>
+                            </td>
+                            <td class="order-list__data">
+                                <p>Delivered</p>
+                            </td>
+                            <td class="order-list__data">
+                                <p>$ 65</p>
+                            </td>
+                            <td class="order-list__data">
+                                <a href="#">View Order</a>
+                                <span> | </span>
+                                <a href="#">Download</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             
             <div class="tab__content tab__content--address disabled" id="tab-content4">
                 <p class="tab__data">The following addresses will be used on the checkout page by default.</p>
             
-                
+                <div class="content content--address">
+                    <div class="address">
+                        <h4 class="address__title">Billing address</h4>
+                        <span>
+                            <button class="address__link" type="button" id="billing-address-link">ADD</button>
+                            <p class="address__text">You have not set up this type of address yet.</p>
+                        </span>
+            
+                        <form class="form form--address disabled" id="billing-address-form" action="/">
+                            <div class="form__group-big">
+                                <div class="form__group">
+                                    <input class="form__control" type="text" name="nameAddressBilling" id="nameAddressBilling" placeholder="First name *">
+                                </div>
+                                <div class="form__group">
+                                    <input class="form__control" type="text" name="surnameAddressBilling" id="surnameAddressBilling" placeholder="Last name *">
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="text" name="companyNameAddressBilling" id="companyNameAddressBilling" placeholder="Company Name">
+                            </div>
+                            <div class="form__group">
+                                <select class="form__control form__control--select" name="countryAddressBilling" id="countryAddressBilling">
+                                    <option value="default">Country *</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="text" name="addressAddressBilling" id="addressAddressBilling" placeholder="Street Address *">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="text" name="postcodeAddressBilling" id="postcodeAddressBilling" placeholder="Postcode / ZIP *">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="text" name="cityAddressBilling" id="cityAddressBilling" placeholder="Town / City *">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="tel" name="phoneAddressBilling" id="phoneAddressBilling" placeholder="Phone *">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="email" name="emailAddressBilling" id="emailAddressBilling" placeholder="Email *">
+                            </div>
+            
+                            <button class="btn btn--solid btn--address" type="submit">SAVE ADDRESS</button>
+                        </form>
+                    </div>
+            
+                    <div class="address">
+                        <h4 class="address__title">Shipping address</h4>
+                        <span>
+                            <button class="address__link" type="button"  id="shipping-address-link">ADD</button>
+                            <p class="address__text">You have not set up this type of address yet.</p>
+                        </span>
+            
+                        <form class="form form--address disabled" id="shipping-address-form" action="/">
+                            <div class="form__group-big">
+                                <div class="form__group">
+                                    <input class="form__control" type="text" name="nameAddressShipping" id="nameAddressShipping" placeholder="First name *">
+                                </div>
+                                <div class="form__group">
+                                    <input class="form__control" type="text" name="surnameAddressShipping" id="surnameAddressShipping" placeholder="Last name *">
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="text" name="companyNameAddressShipping" id="companyNameAddressShipping" placeholder="Company Name">
+                            </div>
+                            <div class="form__group">
+                                <select class="form__control form__control--select" name="countryAddressShipping" id="countryAddressShipping">
+                                    <option value="default">Country *</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="text" name="addressAddressShipping" id="addressAddressShipping" placeholder="Street Address *">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="text" name="postcodeAddressShipping" id="postcodeAddressShipping" placeholder="Postcode / ZIP *">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="text" name="cityAddressShipping" id="cityAddressShipping" placeholder="Town / City *">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="tel" name="phoneAddressShipping" id="phoneAddressShipping" placeholder="Phone *">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__control" type="email" name="emailAddressShipping" id="emailAddressShipping" placeholder="Email *">
+                            </div>
+            
+                            <button class="btn btn--solid btn--address" type="submit">SAVE ADDRESS</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             
             <div class="tab__content tab__content--account disabled" id="tab-content5">

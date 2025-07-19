@@ -1,0 +1,51 @@
+.order-list {
+    width: 100%;
+}
+
+.order-list__header {
+    border-bottom: 1px solid $black;
+
+    tr {
+        td:first-of-type {
+            width: 26%;
+        }
+        td:nth-of-type(2) {
+            width: 20%;
+        }
+        td:nth-of-type(3) {
+            width: 21%;
+        }
+        td:nth-of-type(4) {
+            width: 17%;
+        }
+        td:last-of-type {
+            width: 16%;
+        }
+    }
+}
+
+.order-list__title {
+    padding: 1.5rem 0;
+}
+
+.order-list__item {
+    border-bottom: 1px solid $gray;
+}
+
+.order-list__data {
+    padding: 2.5rem 0;
+    color: $dark-gray;
+
+    a {
+        color: $accent;
+        transition: color .1s ease-in-out;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    span {
+        color: $dark-gray;
+    }
+}
