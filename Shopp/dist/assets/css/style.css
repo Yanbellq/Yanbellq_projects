@@ -757,8 +757,8 @@ button {
 }
 
 .form__toast.hidden {
-    -webkit-transform: translateX(35rem);
-    transform: translateX(35rem);
+    -webkit-transform: translateX(40rem);
+    transform: translateX(40rem);
 }
 
 .btn {
