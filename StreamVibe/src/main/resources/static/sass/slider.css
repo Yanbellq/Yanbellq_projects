@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* Слайдер */
+.slick-slider {
+  /* Обмежувальна оболонка */
+}
+.slick-slider .slick-list {
+  overflow: hidden;
+  /* Стрічка слайдів */
+}
+.slick-slider .slick-list .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 0;
+  /* Слайд */
+}
+.slick-slider .slick-list .slick-track .slick-slide {
+  position: relative;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  transition: 0.3s ease;
+  /* Слайд зображення */
+}
+.slick-slider .slick-list .slick-track .slick-slide:hover {
+  transform: scale(1.1);
+  background-color: #262626;
+  border: 1px solid #1a1a1a;
+}
+@media (max-width: 1600px) {
+  .slick-slider .slick-list .slick-track .slick-slide {
+    padding: 20px;
+  }
+  .slick-slider .slick-list .slick-track .slick-slide .categories-card-image img {
+    width: 85px;
+    height: 100px;
+  }
+  .slick-slider .slick-list .slick-track .slick-slide .categories-card-image .fade-out-bottom {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .slick-slider .slick-list .slick-track {
+    padding: 0;
+    gap: 15px;
+    overflow-x: hidden;
+  }
+  .slick-slider .slick-list .slick-track .slick-slide {
+    padding: 15px;
+  }
+  .slick-slider .slick-list .slick-track .slick-slide .categories-card-image {
+    gap: 5px;
+  }
+  .slick-slider .slick-list .slick-track .slick-slide .categories-card-image img {
+    width: 62px;
+    height: 66px;
+  }
+  .slick-slider .slick-list .slick-track .slick-slide .categories-card-image .fade-out-bottom {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .slick-slider .slick-list .slick-track .slick-slide:hover {
+    transform: scale(1);
+  }
+}
+
+/* Слайдер запущений */
+/* Слайдер з крапками */
+/* Слайд активний (показується) */
+/* Слайд основний */
+/* Слайд по центру */
+/* Клонований слайд */
+/* Стрілка */
+/* Стрілка вліво */
+/* Стрілка вправо */
+/* Стрілка не активна */
+/* Точки (буліти) */
+/* Активна точка */
+/* Елемент точки *//*# sourceMappingURL=slider.css.map */

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="_csrf" content="${_csrf.token}" />
+    <meta name="_csrf_header" content="${_csrf.headerName}" />
+    <link rel="stylesheet" href="/sass/style.css">
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <title>StreamVibe</title>
+</head>
+<body>
+    <header class="header-container">
+        <a href="/" class="logo"><img src="/images/logo.svg" alt="Logo">StreamVibe</a>
+        <input type="checkbox" name="burger" id="burger-check" class="burger-check">
+        <label for="burger-check" class="burger-button">
+            <span></span>
+        </label>
+
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li><a class="nav-item" href="/index.html">Home</a></li>
+                <li><a class="nav-item" href="./movies-and-shows.html">Movies & Shows</a></li>
+                <li><a class="nav-item active">Support</a></li>
+                <li><a class="nav-item" href="./subscription.html">Subscriptions</a></li>
+            </ul>
+        </nav>
+
+        <ul class="search-list">
+            <li class="search-item disabled" id="searchBlock">
+                <form method="get" action="#" class="search-form" id="search-form">
+                    <input type="text" name="search" id="searchInput" class="search-input" placeholder="Search for movies, shows, genres, etc." required>
+                </form>
+
+                <div class="search-result disabled">
+                    <h3 class="search-result-title">Результати пошуку</h3>
+                </div>
+            </li>
+            <li class="search-item">
+                <button type="button" class="search-btn" form="search-form" id="searchBtn">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </button>
+            </li>
+            <li class="search-item">
+                <button type="button" class="notifications-btn">
+                    <i class="fa-light fa-bell"></i>
+                </button>
+            </li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <section class="support-container">
+            <aside class="support-intro">
+                <div>
+                    <h1 class="support-intro-title">Welcome to our support page!</h1>
+                    <p class="support-intro-text">We're here to help you with any problems you may be having with our product.</p>
+                </div>
+    
+                <div class="support-intro-films">
+                    <div class="support-suggestions-container">
+                        <figure class="suggestions-list">
+                            <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                        </figure>
+                        <figure class="suggestions-list">
+                            <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                        </figure>
+                        <figure class="suggestions-list">
+                            <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                        </figure>
+                        <figure class="suggestions-list">
+                            <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                            <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                        </figure>
+                    </div>
+                    <div class="fade-out-bottom"></div>
+                </div>
+            </aside>
+            <form method="post" action="/submit" id="supportForm" class="support-form">
+                <div class="form-top">
+                    <div class="form-top-item">
+                        <label for="name">First Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter First Name" required>
+                        <div class="error" id="name-error"></div>
+                    </div>
+                    <div class="form-top-item">
+                        <label for="surname">Last Name</label>
+                        <input type="text" name="surname" id="surname" placeholder="Enter Last Name" required>
+                        <div class="error" id="surname-error"></div>
+                    </div>
+                    <div class="form-top-item">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                        <div class="error" id="email-error"></div>
+                    </div>
+                    <div class="form-top-item">
+                        <label for="tel">Phone Number</label>
+                        <div class="tel-input">
+                            <select name="region" id="region" required>
+                                <option value="+91">🇮🇳</option>
+                                <option value="+1">🇺🇸</option>
+                                <option value="+44">🇬🇧</option>
+                                <option value="+380" selected>🇺🇦</option>
+                            </select>
+                            <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" required>
+                        </div>
+                        <div class="error" id="phone-error"></div>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Enter your Message"></textarea>
+                </div>
+                <div class="form-submit">
+                    <div class="form-submit-checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox" required>
+                        <label for="checkbox">I agree with <a href="#">Terms of Use and Privacy Policy</a></label>
+                    </div>
+                    
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+        <section class="faq-container">
+            <article class="faq-head">
+                <div class="faq-text-container">
+                    <h2 class="faq-title">Frequently Asked Questions</h2>
+                    <p class="faq-text">Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe.</p>
+                </div>
+                <button type="button" class="faq-btn">Ask a Question</button>
+            </article>
+            <article class="faq">
+                <ol class="faq-list">
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>What is StreamVibe?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>How much does StreamVibe cost?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>What content is available on StreamVibe?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>How can I watch StreamVibe?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>How do I sign up for StreamVibe?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>What is the StreamVibe free trial?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>How do I contact StreamVibe customer support?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>What are the StreamVibe payment methods?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <article class="ads-container">
+            <div class="ads-suggestions-container">
+                <figure class="suggestions-list">
+                    <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+            </div>
+            <div class="fade-out-left"></div>
+        
+            <div class="ads">
+                <h2 class="ads-title">Start your free trial today!</h2>
+                <p class="ads-text">This is a clear and concise call to action that encourages users to sign up for a
+                    free trial of StreamVibe.</p>
+            </div>
+            <button type="button" class="ads-btn" id="adsBtn">Start a Free Trial</button>
+        </article>
+    </main>
+    <footer class="footer-container">
+        <nav class="footer-nav">
+            <div class="footer-nav-container">
+                <a href="/index.html" class="footer-nav-title">Home</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Categories</a></li>
+                    <li><a class="footer-nav-item" href="#">Devices</a></li>
+                    <li><a class="footer-nav-item" href="#">Pricing</a></li>
+                    <li><a class="footer-nav-item" href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./movies-and-shows.html" class="footer-nav-title">Movies</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Genres</a></li>
+                    <li><a class="footer-nav-item" href="#">Trending</a></li>
+                    <li><a class="footer-nav-item" href="#">New Release</a></li>
+                    <li><a class="footer-nav-item" href="#">Popular</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./movies-and-shows.html" class="footer-nav-title">Shows</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Genres</a></li>
+                    <li><a class="footer-nav-item" href="#">Trending</a></li>
+                    <li><a class="footer-nav-item" href="#">New Release</a></li>
+                    <li><a class="footer-nav-item" href="#">Popular</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="#" class="footer-nav-title">Support</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./subscription.html" class="footer-nav-title">Subscription</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Plans</a></li>
+                    <li><a class="footer-nav-item" href="#">Features</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="#" class="footer-nav-title">Connect With Us</a>
+
+                <div class="connect-nav-list">
+                    <a class="connect-nav-item facebook" href="#">
+                        <div class="tooltip">Facebook</div>
+                        <span>
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                    </a>
+                    <a class="connect-nav-item twitter" href="#">
+                        <div class="tooltip">Twitter</div>
+                        <span>
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                    </a>
+                    <a class="connect-nav-item linkedin" href="#">
+                        <div class="tooltip">LinkedIn</div>
+                        <span>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="copyright-container">
+            <p class="copyright-text">&copy2025 streamvibe, All right Reserved</p>
+
+            <div class="copyright-list">
+                <a href="#" class="copyright-item">Terms of Use</a> 
+                <div class="line"></div>
+                <a href="#" class="copyright-item">Privacy Policy</a>   
+                <div class="line"></div>
+                <a href="#" class="copyright-item">Cookie Policy</a> 
+            </div>
+        </div>
+    </footer>
+    <script src="/js/app.js"></script>
+    <script src="/js/form_validation.js" defer></script>
+    <script>
+        const adsBtn = document.getElementById('adsBtn');
+        adsBtn.addEventListener('click', () => {
+            window.location.href = "./subscription.html";
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

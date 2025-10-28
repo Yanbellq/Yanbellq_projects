@@ -1,0 +1,69 @@
+node_modules/
+.idea/
+__pycache__/
+venv/
+.venv/
+
+
+# StreamVibe project
+StreamVibe/HELP.md
+StreamVibe/target/
+!StreamVibe/.mvn/wrapper/maven-wrapper.jar
+!StreamVibe/**/src/main/**/target/
+!StreamVibe/**/src/test/**/target/
+
+### STS ###
+StreamVibe/.apt_generated
+StreamVibe/.classpath
+StreamVibe/.factorypath
+StreamVibe/.project
+StreamVibe/.settings
+StreamVibe/.springBeans
+StreamVibe/.sts4-cache
+
+### IntelliJ IDEA ###
+StreamVibe/.idea
+StreamVibe/*.iws
+StreamVibe/*.iml
+StreamVibe/*.ipr
+
+### NetBeans ###
+StreamVibe/nbproject/private/
+StreamVibe/nbbuild/
+StreamVibe/dist/
+StreamVibe/nbdist/
+StreamVibe/.nb-gradle/
+StreamVibe/build/
+!StreamVibe/**/src/main/**/build/
+!StreamVibe/**/src/test/**/build/
+
+### VS Code ###
+StreamVibe/.vscode/
+
+
+# Maven
+StreamVibe/*.class
+StreamVibe/*.jar
+StreamVibe/*.war
+StreamVibe/*.ear
+StreamVibe/.mvn/
+StreamVibe/mvnw
+StreamVibe/mvnw.cmd
+
+# Logs
+StreamVibe/*.log
+StreamVibe/logs/
+
+# Spring Boot
+StreamVibe/spring-boot-*.log
+StreamVibe/.springBoot
+
+# OS files
+StreamVibe/.DS_Store
+StreamVibe/Thumbs.db
+
+# Temporary files
+StreamVibe/*.tmp
+StreamVibe/*.bak
+StreamVibe/*.swp
+StreamVibe/*~
