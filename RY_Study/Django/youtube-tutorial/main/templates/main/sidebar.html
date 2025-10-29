@@ -1,0 +1,13 @@
+{% load static %}
+
+<aside>
+    <img src="{% static 'main/images/vscode-logo-icon.png' %}" alt="Logo">
+    <span class="logo">Yanbellq</span>
+    <h3>Navigation</h3>
+    <ul>
+        <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="{% url 'about' %}"><i class="fas fa-address-card"></i> About us</a></li>
+        <li><a href="{% url 'news_home' %}"><i class="fas fa-newspaper"></i> News</a></li>
+        <li><a href="#"><i class="fas fa-paper-plane"></i> Contacts</a></li>
+    </ul>
+</aside>

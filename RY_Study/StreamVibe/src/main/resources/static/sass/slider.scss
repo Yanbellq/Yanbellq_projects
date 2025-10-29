@@ -1,0 +1,158 @@
+/* Слайдер */
+
+.slick-slider {
+    // border: 2px solid red;
+    
+    /* Обмежувальна оболонка */
+    
+    .slick-list {
+        overflow: hidden;
+        
+        
+        /* Стрічка слайдів */
+        
+        .slick-track {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 20px 0;
+            // border: 2px solid red;
+            
+            /* Слайд */
+            
+            .slick-slide {
+                position: relative;
+                border-radius: 12px;
+                background-color: #1a1a1a;
+                border: 1px solid #262626;
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                transition: 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: #262626;
+                    border: 1px solid #1a1a1a;
+                }
+                // width: 10%;
+                
+                /* Слайд зображення */
+                
+                // img {
+                //     max-width: 100%;
+                //     height: auto;
+                //     border-radius: 10px;
+                // }
+            }
+        }
+
+        @media (max-width: 1600px) {
+            .slick-track {
+                .slick-slide {
+                    padding: 20px;
+                    .categories-card-image {
+                        img {
+                            width: 85px;
+                            height: 100px;
+                        }
+                        .fade-out-bottom {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 390px) {
+            .slick-track {
+                padding: 0;
+                gap: 15px;
+                overflow-x: hidden;
+
+
+                .slick-slide {
+                    padding: 15px;
+
+                    
+                    .categories-card-image {
+                        gap: 5px;
+                        img {
+                            width: 62px;
+                            height: 66px;
+                            // border: 2px solid red;
+                        }
+                        .fade-out-bottom {
+                            width: 100%;
+                            // border: 2px solid red;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Слайдер запущений */
+
+.slick-slider.slick-initialized {}
+
+/* Слайдер з крапками */
+
+.slick-slider.slick-dotted {}
+
+
+
+
+/* Слайд активний (показується) */
+
+.slick-slide.slick-active {}
+
+/* Слайд основний */
+
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+
+.slick-slide.slick-center {}
+
+/* Клонований слайд */
+
+.slick-slide.slick-cloned {}
+
+/* Стрілка */
+
+.slick-arrow {}
+
+/* Стрілка вліво */
+
+.slick-arrow.slick-prev {}
+
+/* Стрілка вправо */
+
+.slick-arrow.slick-next {}
+
+/* Стрілка не активна */
+
+.slick-arrow.slick-disabled {}
+
+/* Точки (буліти) */
+
+.slick-dots {}
+
+.slick-dots li {}
+
+/* Активна точка */
+
+.slick-dots li.slick-active {}
+
+/* Елемент точки */
+
+.slick-dots li button {}

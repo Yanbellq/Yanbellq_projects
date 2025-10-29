@@ -1,0 +1,207 @@
+.auth {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.auth__form {
+  padding: 0 30px 30px;
+  width: 25vw;
+  width: 25dvw;
+  height: 55rem;
+  box-sizing: border-box !important;
+}
+
+.auth__title {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 70px 0 40px;
+}
+
+.auth__control {
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  margin: 0 0 20px;
+}
+.auth__control--checkbox {
+  padding: 0;
+  font-size: 15px;
+  width: 100%;
+  margin: 15px 0 40px 0;
+}
+
+.auth__control-title {
+  color: rgb(169, 173, 180);
+  margin-right: 10px;
+}
+.auth__control-title--checkbox {
+  display: none;
+}
+
+.auth__control-input {
+  transform: translateY(-2px);
+  font-size: 20px;
+  color: rgb(97, 99, 102);
+  display: block;
+}
+.auth__control-input.password {
+  color: rgb(169, 173, 180);
+}
+.auth__control-input::-moz-placeholder {
+  font-size: 15px;
+}
+.auth__control-input::placeholder {
+  font-size: 15px;
+}
+
+.auth__icon {
+  height: 30px;
+  width: 30px;
+}
+.auth__icon.facebook {
+  height: 25px;
+  width: 25px;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  color: rgb(169, 173, 180);
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control:has(input:checked) {
+  color: rgb(97, 99, 102);
+}
+.control .control__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 3px;
+}
+.control .control__indicator::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator {
+  background: #fff;
+  border: 2px solid #fd33b0;
+}
+.control:hover {
+  color: rgb(97, 99, 102);
+}
+.control:hover .control__indicator {
+  background-color: #ccc;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator, .control input:checked:focus ~ .control__indicator {
+  background: #fff;
+  border: 2px solid #fd33b0;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control .control__indicator:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 8px;
+  border: solid #fd33b0;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.auth__btn {
+  all: unset;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 35px;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fd33b0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 75ms linear;
+}
+.auth__btn:hover {
+  background-color: #e1028c;
+  border: none;
+}
+.auth__btn:disabled {
+  cursor: not-allowed;
+}
+
+.auth__text {
+  color: rgb(169, 173, 180);
+}
+.auth__text--link {
+  margin-top: auto;
+}
+.auth__text--link span {
+  text-decoration: underline;
+  transition: color 75ms linear;
+  cursor: pointer;
+}
+.auth__text--link span:hover {
+  color: rgb(97, 99, 102);
+}
+
+.auth__social-container {
+  width: 100%;
+}
+.auth__social-container button {
+  padding: 10px 0;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid rgb(169, 173, 180);
+  font-weight: 500;
+  transition: color 0.1s linear;
+  transition: color 75ms linear;
+}
+.auth__social-container button:hover {
+  border: 1px solid rgb(169, 173, 180);
+  background-color: transparent;
+}
+.auth__social-container button:hover:has(.facebook) {
+  color: #3b5998;
+}
+.auth__social-container button:hover .google1 {
+  color: #4285f4;
+}
+.auth__social-container button:hover .google2 {
+  color: #ea4335;
+}
+.auth__social-container button:hover .google3 {
+  color: #fbbc05;
+}
+.auth__social-container button:hover .google4 {
+  color: #34a853;
+}
+.auth__social-container button .auth__social-data {
+  display: flex;
+  align-items: center;
+}
+.auth__social-container button .auth__social-data span {
+  transition: color 75ms linear;
+}
+.auth__social-container button .auth__social-data .auth__icon.facebook {
+  margin-right: 5px;
+}
+.auth__social-container button .auth__social-data .auth__icon.facebook ~ span {
+  transform: translateY(2px);
+}/*# sourceMappingURL=Auth.css.map */

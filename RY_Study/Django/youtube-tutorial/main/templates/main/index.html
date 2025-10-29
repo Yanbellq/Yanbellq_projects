@@ -1,0 +1,34 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Home page{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi, asperiores commodi cupiditate distinctio dolorem enim fugiat hic impedit iure laboriosam libero magni minima non odio officia officiis pariatur perspiciatis provident quaerat quam, quia quibusdam quo quod recusandae rem reprehenderit repudiandae saepe sapiente tempore ut vel voluptas voluptatum? Quidem, suscipit.</p>
+        <p>{{ content }}</p>
+
+        {% for el in values %}
+            {% if el == "Hello" %}
+                {% filter upper %}
+                    {{ el }}
+                {% endfilter %}
+            {% endif %}
+
+            {% if el == "World" %}
+                {% filter lower %}
+                    {{ el }}
+                {% endfilter %}
+            {% endif %}
+        {% endfor %}
+
+
+        {% for el in object %}
+
+            <p>{{ el|upper }}</p>
+        {% endfor %}
+
+        <button class="btn btn-warning" type="button">Go to About us</button>
+    </div>
+{% endblock %}

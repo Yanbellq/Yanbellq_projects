@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/style.css">
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <title>StreamVibe</title>
+</head>
+<body>
+    <header class="header-container">
+        <a href="/" class="logo"><img src="/images/logo.svg" alt="Logo">StreamVibe</a>
+        <input type="checkbox" name="burger" id="burger-check" class="burger-check">
+        <label for="burger-check" class="burger-button">
+            <span></span>
+        </label>
+
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li><a class="nav-item" href="/index.html">Home</a></li>
+                <li><a class="nav-item active">Movies & Shows</a></li>
+                <li><a class="nav-item" href="./support.html">Support</a></li>
+                <li><a class="nav-item" href="./subscription.html">Subscriptions</a></li>
+            </ul>
+        </nav>
+
+        <ul class="search-list">
+            <li class="search-item disabled" id="searchBlock">
+                <form method="get" action="#" class="search-form" id="search-form">
+                    <input type="text" name="search" id="searchInput" class="search-input" placeholder="Search for movies, shows, genres, etc." required>
+                </form>
+
+                <div class="search-result disabled">
+                    <h3 class="search-result-title">Результати пошуку</h3>
+                </div>
+            </li>
+            <li class="search-item">
+                <button type="button" class="search-btn" form="search-form" id="searchBtn">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </button>
+            </li>
+            <li class="search-item">
+                <button type="button" class="notifications-btn">
+                    <i class="fa-light fa-bell"></i>
+                </button>
+            </li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <section class="movie-intro-container avengers">
+            <nav class="movie-nav">
+                <h2 class="movie-title">Avengers : Endgame</h2>
+                <p class="movie-text">With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.</p>
+                <div class="movie-btn-container">
+                    <button type="button" class="play"><i class="fa-solid fa-play"></i>Play Now</button>
+                    <div class="movie-btn-small-container">
+                        <button type="button" class="movie-btn"><i class="fa-light fa-plus"></i></button>
+                        <button type="button" class="movie-btn"><i class="fa-light fa-thumbs-up"></i></button>
+                        <button type="button" class="movie-btn"><i class="fa-light fa-volume"></i></button>
+                    </div>
+                </div>
+            </nav>
+            <div class="carousel-control">
+                <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                <ul class="carousel-control-list">
+                    <li class="carousel-control-item active"></li>
+                    <li class="carousel-control-item"></li>
+                    <li class="carousel-control-item"></li>
+                    <li class="carousel-control-item"></li>
+                </ul>
+
+                <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="movies">
+            <button type="button" id="moviesBtn">Movies</button>
+            <div class="genres">
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Our Genres</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Action</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Adventure</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Comedy</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Drama</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Horror</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Popular Top 10 In Genres</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Action</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Adventure</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Comedy</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Drama</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Trending Now</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">New Releases</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Must - Watch Movies</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="shows">
+            <button type="button" id="showsBtn">Shows</button>
+            <div class="genres">
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Our Genres</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Action</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Adventure</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Comedy</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Drama</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Horror</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Popular Top 10 In Genres</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Action</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Adventure</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Comedy</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Drama</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Trending Shows Now</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-rectangle-history"></i> 4 Seasons</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-rectangle-history"></i> 4 Seasons</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-rectangle-history"></i> 4 Seasons</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-rectangle-history"></i> 4 Seasons</span>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">New Released Shows</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-rectangle-history"></i> 4 Seasons</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-rectangle-history"></i> 4 Seasons</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-rectangle-history"></i> 4 Seasons</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-rectangle-history"></i> 4 Seasons</span>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Must - Watch Shows</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+            </div>
+        </section>
+        
+        <section class="movies-mobile">
+            <div class="movies-mobile-head">
+                <button type="button" class="active"><a href="./movies-open.html">Movies</a></button>
+                <button type="button"><a href="./shows-open.html">Shows</a></button>
+            </div>
+            <div class="genres">
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Our Genres</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+            
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+            
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Action</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Adventure</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Comedy</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Drama</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <h3 class="categories-card-title">Horror</h3>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Popular Top 10 In Genres</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+            
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+            
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Action</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Adventure</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Comedy</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image">
+                                <img src="/images/home-page/categories/1.png" alt="category">
+                                <img src="/images/home-page/categories/2.png" alt="category">
+                                <img src="/images/home-page/categories/3.png" alt="category">
+                                <img src="/images/home-page/categories/4.png" alt="category">
+                                <div class="fade-out-bottom"></div>
+                            </div>
+                            <div class="categories-card-info">
+                                <div class="card-info-head">
+                                    <span>Top 10 In</span>
+                                    <h3 class="categories-card-title">Drama</h3>
+                                </div>
+                                <i class="fa-regular fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Trending Now</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+            
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+            
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <span class="card-info-text"><i class="fa-solid fa-eye"></i> 2K</span>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">New Releases</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+            
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+            
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text third-category">Released at <span> 14 April 2023</span></span>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section class="categories-container">
+                    <article class="categories-head">
+                        <div class="categories-text-container">
+                            <h2 class="categories-title">Must - Watch Movies</h2>
+                        </div>
+                        <div class="carousel-control">
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-left"></i></button>
+            
+                            <ul class="carousel-control-list">
+                                <li class="carousel-control-item active"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                                <li class="carousel-control-item"></li>
+                            </ul>
+            
+                            <button class="carousel-control-arrow arrow-btn"><i class="fa-regular fa-arrow-right"></i></button>
+                        </div>
+                    </article>
+                    <article class="categories">
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="categories-card">
+                            <div class="categories-card-image"></div>
+                            <div class="categories-card-info">
+                                <span class="card-info-text"><i class="fa-solid fa-clock"></i> 1h 30min</span>
+                                <div class="rating-container">
+                                    <div class="stars">
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star"></div>
+                                        <div class="star half-star"></div>
+                                    </div>
+                                    <span class="rating-value">20K</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <article class="ads-container">
+            <div class="ads-suggestions-container">
+                <figure class="suggestions-list">
+                    <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="/images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="/images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+            </div>
+            <div class="fade-out-left"></div>
+
+            <div class="ads">
+                <h2 class="ads-title">Start your free trial today!</h2>
+                <p class="ads-text">This is a clear and concise call to action that encourages users to sign up for a
+                    free trial of StreamVibe.</p>
+            </div>
+            <button type="button" class="ads-btn" id="adsBtn">Start a Free Trial</button>
+        </article>
+    </main>
+    <footer class="footer-container">
+        <nav class="footer-nav">
+            <div class="footer-nav-container">
+                <a href="/index.html" class="footer-nav-title">Home</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Categories</a></li>
+                    <li><a class="footer-nav-item" href="#">Devices</a></li>
+                    <li><a class="footer-nav-item" href="#">Pricing</a></li>
+                    <li><a class="footer-nav-item" href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="#" class="footer-nav-title">Movies</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Genres</a></li>
+                    <li><a class="footer-nav-item" href="#">Trending</a></li>
+                    <li><a class="footer-nav-item" href="#">New Release</a></li>
+                    <li><a class="footer-nav-item" href="#">Popular</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="#" class="footer-nav-title">Shows</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Genres</a></li>
+                    <li><a class="footer-nav-item" href="#">Trending</a></li>
+                    <li><a class="footer-nav-item" href="#">New Release</a></li>
+                    <li><a class="footer-nav-item" href="#">Popular</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./support.html" class="footer-nav-title">Support</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./subscription.html" class="footer-nav-title">Subscription</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Plans</a></li>
+                    <li><a class="footer-nav-item" href="#">Features</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./support.html" class="footer-nav-title">Connect With Us</a>
+
+                <div class="connect-nav-list">
+                    <a class="connect-nav-item facebook" href="#">
+                        <div class="tooltip">Facebook</div>
+                        <span>
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                    </a>
+                    <a class="connect-nav-item twitter" href="#">
+                        <div class="tooltip">Twitter</div>
+                        <span>
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                    </a>
+                    <a class="connect-nav-item linkedin" href="#">
+                        <div class="tooltip">LinkedIn</div>
+                        <span>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="copyright-container">
+            <p class="copyright-text">&copy2025 streamvibe, All right Reserved</p>
+
+            <div class="copyright-list">
+                <a href="#" class="copyright-item">Terms of Use</a> 
+                <div class="line"></div>
+                <a href="#" class="copyright-item">Privacy Policy</a>   
+                <div class="line"></div>
+                <a href="#" class="copyright-item">Cookie Policy</a> 
+            </div>
+        </div>
+    </footer>
+    <script>
+        const carousels = document.querySelectorAll(".carousel-control");
+
+        carousels.forEach(carousel => {
+            const navArrows = carousel.querySelectorAll(".arrow-btn");
+            const navItems = carousel.querySelectorAll(".carousel-control-item");
+
+            let activeIndex = Array.from(navItems).findIndex(item => item.classList.contains("active"));
+
+            navArrows.forEach((arrow, index) => {
+                arrow.addEventListener("click", () => {
+                    navItems[activeIndex].classList.remove("active");
+
+                    if (index === 0) {
+                        activeIndex = (activeIndex - 1 + navItems.length) % navItems.length;
+                    } else {
+                        activeIndex = (activeIndex + 1) % navItems.length;
+                    }
+
+                    navItems[activeIndex].classList.add("active");
+                });
+            });
+
+            // Add functionality for screens <= 390px
+            if (window.innerWidth <= 390) {
+                navItems.forEach((item, index) => {
+                    item.addEventListener("click", () => {
+                        navItems[activeIndex].classList.remove("active");
+                        activeIndex = index;
+                        item.classList.add("active");
+                    });
+                });
+            }
+        });
+
+        const movieBtn = document.getElementById("moviesBtn").addEventListener("click", () => {
+            window.location.href = "/pages/movies-open.html";
+        });
+
+        const showBtn = document.getElementById("showsBtn").addEventListener("click", () => {
+            window.location.href = "/pages/shows-open.html";
+        });
+
+        const adsBtn = document.getElementById('adsBtn');
+        adsBtn.addEventListener('click', () => {
+            window.location.href = "./subscription.html";
+        })
+    </script>
+    <script src="/js/app.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

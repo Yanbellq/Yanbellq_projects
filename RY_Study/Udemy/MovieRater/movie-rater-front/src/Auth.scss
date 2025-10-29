@@ -1,0 +1,259 @@
+.auth {
+    padding: 50px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    height: 100dvh;
+
+    // border: 2px solid red;
+}
+
+.auth__form {
+    padding: 0 30px 30px;
+    
+    width: 25vw;
+    width: 25dvw;
+    height: 55rem;
+
+    box-sizing: border-box !important;
+
+    // border: 2px solid red;
+}
+
+.auth__title {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 70px 0 40px;
+}
+
+.auth__control {
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    // border: 2px solid red;
+    margin: 0 0 20px;
+
+    &--checkbox {
+        padding: 0;
+        font-size: 15px;
+        width: 100%;
+        margin: 15px 0 40px 0;
+        // transform: translateX(-18px);
+        
+    }
+}
+
+.auth__control-title {
+    color: rgb(169, 173, 180);
+    margin-right: 10px;
+
+
+    &--checkbox {
+        display: none;
+    }
+}
+
+.auth__control-input {
+    transform: translateY(-2px);
+    font-size: 20px;
+    color: rgb(97, 99, 102);
+    display: block;
+
+    &.password {
+        color: rgb(169, 173, 180);
+    }
+
+    &::placeholder {
+        font-size: 15px;
+    }
+}
+
+.auth__icon {
+    height: 30px;
+    width: 30px;
+
+    &.facebook {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+
+.control {
+    // border: 2px solid red;
+
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(169, 173, 180);
+
+    input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &:has(input:checked) {
+        color: rgb(97, 99, 102);
+    }
+
+    .control__indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: #e6e6e6;
+        border-radius: 3px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+    }
+
+    input:checked~.control__indicator {
+        background: #fff;
+        border: 2px solid #fd33b0;
+    }
+
+    &:hover {
+        color: rgb(97, 99, 102);
+
+        & .control__indicator {
+            background-color: #ccc;
+        }
+    }
+
+    &:hover input:not([disabled]):checked~.control__indicator,
+    & input:checked:focus~.control__indicator {
+        background: #fff;
+        border: 2px solid #fd33b0;
+    }
+
+    & input:checked~.control__indicator:after {
+        display: block;
+    }
+    
+    & .control__indicator:after {
+        left: 6px;
+        top: 3px;
+        width: 5px;
+        height: 8px;
+        border: solid #fd33b0;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}
+
+
+.auth__btn {
+    all: unset;
+
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 35px;
+
+    display: block;
+    
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+
+    // border: 2px solid red;
+    border-radius: 5px;
+    background-color: #fd33b0;
+    color: white;
+    cursor: pointer;
+
+    transition: background-color 75ms linear;
+
+    &:hover {
+        background-color: darken(#fd33b0, 15%);
+        border: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+
+.auth__text {
+    color: rgb(169, 173, 180);
+
+    &--link {
+        margin-top: auto;
+
+        span {
+            text-decoration: underline;
+            transition: color 75ms linear;
+            cursor: pointer;
+
+            &:hover {
+                color: rgb(97, 99, 102);
+            }
+        }
+    }
+}
+
+.auth__social-container {
+    width: 100%;
+
+    button {
+        padding: 10px 0;
+        width: 100%;
+        flex-direction: column;
+        border: 1px solid rgb(169, 173, 180);
+        font-weight: 500;
+        transition: color .1s linear;
+                transition: color 75ms linear;
+
+        &:hover {
+            border: 1px solid rgb(169, 173, 180);
+            background-color: transparent;
+
+            &:has(.facebook) {
+                color: #3b5998;
+            }
+            
+            .google1 {
+                color: #4285f4;
+            }
+            
+            .google2 {
+                color: #ea4335;
+            }
+            
+            .google3 {
+                color: #fbbc05;
+            }
+            
+            .google4 {
+                color: #34a853;
+            }
+        }
+
+        .auth__social-data {
+            display: flex;
+            align-items: center;
+
+            span {
+                transition: color 75ms linear;
+            }
+            
+            .auth__icon.facebook {
+                margin-right: 5px;
+                
+                ~span {
+                    transform: translateY(2px);
+                }
+            }
+        }
+    }
+}

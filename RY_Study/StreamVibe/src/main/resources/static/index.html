@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/style.css">
+    <link rel="stylesheet" href="./sass/slider.css">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <title>StreamVibe</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <a href="/" class="logo"><img src="./images/logo.svg" alt="Logo">StreamVibe</a>
+        <input type="checkbox" name="burger" id="burger-check" class="burger-check">
+        <label for="burger-check" class="burger-button">
+            <span></span>
+        </label>
+
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li><a class="nav-item active">Home</a></li>
+                <li><a class="nav-item" href="./pages/movies-and-shows.html">Movies & Shows</a></li>
+                <li><a class="nav-item" href="./pages/support.html">Support</a></li>
+                <li><a class="nav-item" href="./pages/subscription.html">Subscriptions</a></li>
+            </ul>
+        </nav>
+
+        <ul class="search-list">
+            <li class="search-item disabled" id="searchBlock">
+                <form method="get" action="#" class="search-form" id="search-form">
+                    <input type="text" name="search" id="searchInput" class="search-input"
+                        placeholder="Search for movies, shows, genres, etc." required>
+                </form>
+
+                <div class="search-result disabled">
+                    <h3 class="search-result-title">Результати пошуку</h3>
+                </div>
+            </li>
+            <li class="search-item">
+                <button type="button" class="search-btn" form="search-form" id="searchBtn">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </button>
+            </li>
+            <li class="search-item">
+                <button type="button" class="notifications-btn">
+                    <i class="fa-light fa-bell"></i>
+                </button>
+            </li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <section class="intro-container"> <!-- done -->
+            <div class="suggestions-container">
+                <div class="fade-out-top"></div>
+                <figure class="suggestions-list">
+                    <img src="./images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="./images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="./images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="./images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <div class="fade-out-bottom"></div>
+            </div>
+
+            <a href="./pages/movies-and-shows.html" class="play">
+                <img src="./images/home-page/play_btn.svg" alt="play">
+            </a>
+
+            <article class="intro">
+                <h1 class="intro-title">The Best Streaming Experience</h1>
+                <p class="intro-text">StreamVibe is the best streaming experience for watching your favorite movies and
+                    shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content,
+                    including the latest blockbusters, classic movies, popular TV shows, and more. You can also create
+                    your own watchlists, so you can easily find the content you want to watch.</p>
+                <button type="button" class="intro-btn" id="introBtn"><i class="fa-solid fa-play"></i>Start Watching
+                    Now</button>
+            </article>
+        </section>
+        <section class="categories-container"> <!-- done -->
+            <article class="categories-head">
+                <div class="categories-text-container">
+                    <h2 class="categories-title">Explore our wide variety of categories</h2>
+                    <p class="categories-text">Whether you're looking for a comedy to make you laugh, a drama to make
+                        you think, or a documentary to learn something new</p>
+                </div>
+                <div class="carousel-control">
+                    <button class="carousel-control-arrow arrow-btn-prev"><i
+                            class="fa-regular fa-arrow-left"></i></button>
+
+                    <ul class="carousel-control-list"></ul>
+
+                    <button class="carousel-control-arrow arrow-btn-next"><i
+                            class="fa-regular fa-arrow-right"></i></button>
+                </div>
+            </article>
+            <article class="categories">
+                <a href="#" class="categories-card">
+                    <div class="categories-card-image">
+                        <img data-lazy="./images/home-page/categories/1.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/2.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/3.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/4.png" alt="category">
+                        <div class="fade-out-bottom"></div>
+                    </div>
+                    <div class="categories-card-info">
+                        <h3 class="categories-card-title">Action</h3>
+                        <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="#" class="categories-card">
+                    <div class="categories-card-image">
+                        <img data-lazy="./images/home-page/categories/1.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/2.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/3.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/4.png" alt="category">
+                        <div class="fade-out-bottom"></div>
+                    </div>
+                    <div class="categories-card-info">
+                        <h3 class="categories-card-title">Adventure</h3>
+                        <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="#" class="categories-card">
+                    <div class="categories-card-image">
+                        <img data-lazy="./images/home-page/categories/1.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/2.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/3.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/4.png" alt="category">
+                        <div class="fade-out-bottom"></div>
+                    </div>
+                    <div class="categories-card-info">
+                        <h3 class="categories-card-title">Comedy</h3>
+                        <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="#" class="categories-card">
+                    <div class="categories-card-image">
+                        <img data-lazy="./images/home-page/categories/1.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/2.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/3.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/4.png" alt="category">
+                        <div class="fade-out-bottom"></div>
+                    </div>
+                    <div class="categories-card-info">
+                        <h3 class="categories-card-title">Drama</h3>
+                        <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="#" class="categories-card">
+                    <div class="categories-card-image">
+                        <img data-lazy="./images/home-page/categories/1.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/2.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/3.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/4.png" alt="category">
+                        <div class="fade-out-bottom"></div>
+                    </div>
+                    <div class="categories-card-info">
+                        <h3 class="categories-card-title">Horror</h3>
+                        <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="#" class="categories-card">
+                    <div class="categories-card-image">
+                        <img data-lazy="./images/home-page/categories/1.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/2.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/3.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/4.png" alt="category">
+                        <div class="fade-out-bottom"></div>
+                    </div>
+                    <div class="categories-card-info">
+                        <h3 class="categories-card-title">Fuck</h3>
+                        <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="#" class="categories-card">
+                    <div class="categories-card-image">
+                        <img data-lazy="./images/home-page/categories/1.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/2.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/3.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/4.png" alt="category">
+                        <div class="fade-out-bottom"></div>
+                    </div>
+                    <div class="categories-card-info">
+                        <h3 class="categories-card-title">Suck</h3>
+                        <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="#" class="categories-card">
+                    <div class="categories-card-image">
+                        <img data-lazy="./images/home-page/categories/1.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/2.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/3.png" alt="category">
+                        <img data-lazy="./images/home-page/categories/4.png" alt="category">
+                        <div class="fade-out-bottom"></div>
+                    </div>
+                    <div class="categories-card-info">
+                        <h3 class="categories-card-title">Dick</h3>
+                        <i class="fa-regular fa-arrow-right"></i>
+                    </div>
+                </a>
+            </article>
+        </section>
+        <section class="devices-container"> <!-- done -->
+            <article class="devices-text-container">
+                <h2 class="devices-title">We Provide you streaming experience across various devices.</h2>
+                <p class="devices-text">With StreamVibe, you can enjoy your favorite movies and TV shows anytime,
+                    anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you
+                    never miss a moment of entertainment.</p>
+            </article>
+            <article class="devices">
+                <div class="devices-card">
+                    <h3 class="devices-card-title"><img src="./images/home-page/smartphone-icon.svg"
+                            alt="smartphone">Smartphones</h3>
+                    <p class="devices-card-text">StreamVibe is optimized for both Android and iOS smartphones. Download
+                        our app from the Google Play Store or the Apple App Store</p>
+                </div>
+                <div class="devices-card">
+                    <h3 class="devices-card-title"><img src="./images/home-page/tablet-icon.svg" alt="tablet">Tablet
+                    </h3>
+                    <p class="devices-card-text">StreamVibe is optimized for both Android and iOS smartphones. Download
+                        our app from the Google Play Store or the Apple App Store</p>
+                </div>
+                <div class="devices-card">
+                    <h3 class="devices-card-title"><img src="./images/home-page/tv-icon.svg" alt="tv">Smart TV</h3>
+                    <p class="devices-card-text">StreamVibe is optimized for both Android and iOS smartphones. Download
+                        our app from the Google Play Store or the Apple App Store</p>
+                </div>
+                <div class="devices-card">
+                    <h3 class="devices-card-title"><img src="./images/home-page/laptop-icon.svg" alt="laptop">Laptops
+                    </h3>
+                    <p class="devices-card-text">StreamVibe is optimized for both Android and iOS smartphones. Download
+                        our app from the Google Play Store or the Apple App Store</p>
+                </div>
+                <div class="devices-card">
+                    <h3 class="devices-card-title"><img src="./images/home-page/joystick-icon.svg" alt="joystick">Gaming
+                        Consoles</h3>
+                    <p class="devices-card-text">StreamVibe is optimized for both Android and iOS smartphones. Download
+                        our app from the Google Play Store or the Apple App Store</p>
+                </div>
+                <div class="devices-card">
+                    <h3 class="devices-card-title"><img src="./images/home-page/vr-icon.svg" alt="vr">VR Headsets</h3>
+                    <p class="devices-card-text">StreamVibe is optimized for both Android and iOS smartphones. Download
+                        our app from the Google Play Store or the Apple App Store</p>
+                </div>
+            </article>
+        </section>
+        <section class="faq-container"> <!-- done -->
+            <article class="faq-head">
+                <div class="faq-text-container">
+                    <h2 class="faq-title">Frequently Asked Questions</h2>
+                    <p class="faq-text">Got questions? We've got answers! Check out our FAQ section to find answers to
+                        the most common questions about StreamVibe.</p>
+                </div>
+                <button type="button" class="faq-btn">Ask a Question</button>
+            </article>
+            <article class="faq">
+                <ol class="faq-list">
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>What is StreamVibe?<span
+                                class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>How much does StreamVibe
+                            cost?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>What content is available on
+                            StreamVibe?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>How can I watch StreamVibe?<span
+                                class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>How do I sign up for
+                            StreamVibe?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>What is the StreamVibe free
+                            trial?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>How do I contact StreamVibe
+                            customer support?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                    <li class="faq-list-item">
+                        <h3 class="list-item-title"><span class="list-item-num"></span>What are the StreamVibe payment
+                            methods?<span class="list-item-status"></span></h3>
+                        <p class="list-item-text disabled">
+                            StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+                        </p>
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <section class="subscription-container"> <!-- done -->
+            <article class="subscription-head">
+                <div class="subscription-text-container">
+                    <h2 class="subscription-title">Choose the plan that's right for you</h2>
+                    <p class="subscription-text">Join StreamVibe and select from our flexible subscription options
+                        tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+                </div>
+                <div class="subscription-time-container">
+                    <button type="button" class="subscription-time-btn active">Monthly</button>
+                    <button type="button" class="subscription-time-btn">Yearly</button>
+                </div>
+            </article>
+            <article class="subscription">
+                <div class="subscription-card">
+                    <h3 class="subscription-card-title">Basic Plan</h3>
+                    <p class="subscription-card-text">Enjoy an extensive library of movies and shows, featuring a range
+                        of content, including recently released titles.</p>
+                    <p class="subscription-card-price"><span class="num">$9.99</span> /month</p>
+                    <div class="subscription-card-submit">
+                        <button type="button" class="subscription-card-btn">Start Free Trial</button>
+                        <button type="button" class="subscription-card-btn">Choose Plan</button>
+                    </div>
+                </div>
+                <div class="subscription-card">
+                    <h3 class="subscription-card-title">Standard Plan</h3>
+                    <p class="subscription-card-text">Access to a wider selection of movies and shows, including most
+                        new releases and exclusive content</p>
+                    <p class="subscription-card-price"><span class="num">$12.99</span> /month</p>
+                    <div class="subscription-card-submit">
+                        <button type="button" class="subscription-card-btn">Start Free Trial</button>
+                        <button type="button" class="subscription-card-btn">Choose Plan</button>
+                    </div>
+                </div>
+                <div class="subscription-card">
+                    <h3 class="subscription-card-title">Premium Plan</h3>
+                    <p class="subscription-card-text">Access to a widest selection of movies and shows, including all
+                        new releases and Offline Viewing</p>
+                    <p class="subscription-card-price"><span class="num">$14.99</span> /month</p>
+                    <div class="subscription-card-submit">
+                        <button type="button" class="subscription-card-btn">Start Free Trial</button>
+                        <button type="button" class="subscription-card-btn">Choose Plan</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <article class="ads-container">
+            <div class="ads-suggestions-container">
+                <figure class="suggestions-list">
+                    <img src="./images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="./images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="./images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+                <figure class="suggestions-list">
+                    <img src="./images/home-page/intro/1.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/2.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/3.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/4.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/5.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/6.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/7.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/8.png" alt="intro-photo">
+                    <img src="./images/home-page/intro/9.png" alt="intro-photo">
+                </figure>
+            </div>
+            <div class="fade-out-left"></div>
+
+            <div class="ads">
+                <h2 class="ads-title">Start your free trial today!</h2>
+                <p class="ads-text">This is a clear and concise call to action that encourages users to sign up for a
+                    free trial of StreamVibe.</p>
+            </div>
+            <button type="button" class="ads-btn" id="adsBtn">Start a Free Trial</button>
+        </article>
+    </main>
+    <footer class="footer-container">
+        <nav class="footer-nav">
+            <div class="footer-nav-container">
+                <a href="#" class="footer-nav-title">Home</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Categories</a></li>
+                    <li><a class="footer-nav-item" href="#">Devices</a></li>
+                    <li><a class="footer-nav-item" href="#">Pricing</a></li>
+                    <li><a class="footer-nav-item" href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./pages/movies-and-shows.html" class="footer-nav-title">Movies</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Genres</a></li>
+                    <li><a class="footer-nav-item" href="#">Trending</a></li>
+                    <li><a class="footer-nav-item" href="#">New Release</a></li>
+                    <li><a class="footer-nav-item" href="#">Popular</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./pages/movies-and-shows.html" class="footer-nav-title">Shows</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Genres</a></li>
+                    <li><a class="footer-nav-item" href="#">Trending</a></li>
+                    <li><a class="footer-nav-item" href="#">New Release</a></li>
+                    <li><a class="footer-nav-item" href="#">Popular</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./pages/support.html" class="footer-nav-title">Support</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./pages/subscription.html" class="footer-nav-title">Subscription</a>
+
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-item" href="#">Plans</a></li>
+                    <li><a class="footer-nav-item" href="#">Features</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-container">
+                <a href="./pages/support.html" class="footer-nav-title">Connect With Us</a>
+
+                <div class="connect-nav-list">
+                    <a class="connect-nav-item facebook" href="#">
+                        <div class="tooltip">Facebook</div>
+                        <span>
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                    </a>
+                    <a class="connect-nav-item twitter" href="#">
+                        <div class="tooltip">Twitter</div>
+                        <span>
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                    </a>
+                    <a class="connect-nav-item linkedin" href="#">
+                        <div class="tooltip">LinkedIn</div>
+                        <span>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="copyright-container">
+            <p class="copyright-text">&copy2025 streamvibe, All right Reserved</p>
+
+            <div class="copyright-list">
+                <a href="#" class="copyright-item">Terms of Use</a>
+                <div class="line"></div>
+                <a href="#" class="copyright-item">Privacy Policy</a>
+                <div class="line"></div>
+                <a href="#" class="copyright-item">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const adsBtn = document.getElementById('adsBtn');
+        adsBtn.addEventListener('click', () => {
+            window.location.href = "/pages/subscription.html";
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slick__script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/app.js" defer></script>
+</body>
+
+</html>
